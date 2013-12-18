@@ -21,6 +21,11 @@
     <a href="">[{{ _('Legal Terms') }}]</a>
     <a href="">[{{ _('RSS') }}]</a>
     <a href="">[{{ _('About') }}]</a>
+    {% if get_locale() == 'de' -%}
+    <a href="{{ url_for('lang', lang='en') }}"><img src="{{ url_for('static', filename='flags/gb.png') }}"></a>
+    {%- else -%}
+    <a href="{{ url_for('lang', lang='de') }}"><img src="{{ url_for('static', filename='flags/de.png') }}"></a>
+    {%- endif %}
     </p>
   </body>
 </html>
