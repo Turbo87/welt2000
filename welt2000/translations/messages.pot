@@ -1,0 +1,177 @@
+# Translations template for WELT2000.
+# Copyright (C) 2013 WELT2000 team
+# This file is distributed under the same license as the WELT2000 project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WELT2000 0.1.0\n"
+"Report-Msgid-Bugs-To: tobias.bieniek@gmx.de\n"
+"POT-Creation-Date: 2013-12-19 00:08+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: welt2000/templates/_base.jinja:9
+msgid "Home"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:10
+msgid "News"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:11 welt2000/templates/contribute.jinja:4
+msgid "Contribute"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:12
+msgid "Downloads"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:13 welt2000/templates/references.jinja:4
+msgid "References"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:14
+msgid "FAQ"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:20 welt2000/templates/contribute.jinja:18
+msgid "Contact"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:21
+msgid "Legal Terms"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:22
+msgid "RSS"
+msgstr ""
+
+#: welt2000/templates/_base.jinja:23
+msgid "About"
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:6
+msgid "There are several ways to contribute to the WELT2000 project."
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:8
+msgid "You are a Pilot or Airfield-Operator?"
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:10
+#, python-format
+msgid ""
+"Examine the information for the airfields and waypoints with which you "
+"are familiar. Are they faulty? Is information missing? If the answer is "
+"\"yes\" then you should make a <a href=\"%(link)s\">Contribution to the "
+"Database</a>."
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:12
+msgid "You are Responsible for a Website?"
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:14
+#, python-format
+msgid ""
+"Integrate our RSS-Feed \"WELT2000-Updates\" into your site. By doing this"
+" you are advertising the project and offer your visitors a practical "
+"service. All relevant information is on the <a href=\"%(link)s\">RSS-"
+"page</a>."
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:16
+msgid "You Have Ideas, Criticism, Wishes?"
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:18
+msgid ""
+"We welcome all feedback since this proves to us that we serve a purpose "
+"with this project."
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:20
+msgid "You Have Some Spare Cash Available?"
+msgstr ""
+
+#: welt2000/templates/contribute.jinja:22
+#, python-format
+msgid ""
+"Sponsor the segelflug.de site! The WELT2000 website is hosted free of "
+"charge by this platform - however the platform itself incurs costs. The "
+"segelflug.de and WELT2000 work entirely voluntarily. <a "
+"href=\"%(link)s\">segelflug.de Contacts</a>"
+msgstr ""
+
+#: welt2000/templates/index.jinja:4
+msgid "Welcome"
+msgstr ""
+
+#: welt2000/templates/index.jinja:6
+msgid ""
+"WELT2000 is a free database of airports and waypoints worldwide. The data"
+" is the basis of a lot of instruments and software for airsports. "
+"WELT2000 is made by airsportsmen for airsportsmen."
+msgstr ""
+
+#: welt2000/templates/index.jinja:9
+msgid "Release date"
+msgstr ""
+
+#: welt2000/templates/index.jinja:10
+msgid "Airports"
+msgstr ""
+
+#: welt2000/templates/index.jinja:10 welt2000/templates/index.jinja:11
+msgid "worldwide"
+msgstr ""
+
+#: welt2000/templates/index.jinja:11
+msgid "Waypoints"
+msgstr ""
+
+#: welt2000/templates/index.jinja:16
+msgid "More Informationen"
+msgstr ""
+
+#: welt2000/templates/index.jinja:19
+msgid "Instruments and software"
+msgstr ""
+
+#: welt2000/templates/index.jinja:20
+msgid "Contributing"
+msgstr ""
+
+#: welt2000/templates/index.jinja:21
+msgid "Database download"
+msgstr ""
+
+#: welt2000/templates/references.jinja:6
+msgid ""
+"The WELT2000 database is the foundation of many devices and programs for "
+"aviation sports."
+msgstr ""
+
+#: welt2000/templates/references.jinja:11
+msgid "Vendor"
+msgstr ""
+
+#: welt2000/templates/references.jinja:12
+msgid "Product"
+msgstr ""
+
+#: welt2000/templates/references.jinja:13
+msgid "Homepage"
+msgstr ""
+
+#: welt2000/templates/references.jinja:51
+msgid "Add a Device or Program"
+msgstr ""
+
