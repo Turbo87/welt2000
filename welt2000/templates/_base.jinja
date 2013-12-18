@@ -5,10 +5,22 @@
   <body>
     <h1>WELT2000</h1>
 
-    <p>[Home] [News] [Contribute] [Downloads] [References] [FAQ]</p>
+    <p>
+    <a href="{{ url_for('index') }}">[Home]</a>
+    <a href="">[News]</a>
+    <a href="{{ url_for('contribute') }}">[Contribute]</a>
+    <a href="">[Downloads]</a>
+    <a href="">[References]</a>
+    <a href="">[FAQ]</a>
+    </p>
 
     {% block content %}{% endblock %}
 
-    <p>[Contact] [Legal Terms] [RSS] [About]</p>
+    <p>
+    <a href="">[Contact]</a>
+    <a href="">[Legal Terms]</a>
+    <a href="">[RSS]</a>
+    <a href="">[About]</a>
+    </p>
   </body>
 </html>
