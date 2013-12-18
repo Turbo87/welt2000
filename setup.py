@@ -48,5 +48,6 @@ setup(
     ],
     install_requires=[
         'flask==0.10.1',
+        'Flask-Script==0.6.6',
     ]
 )
