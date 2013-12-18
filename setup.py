@@ -2,6 +2,10 @@ import os
 
 from setuptools import setup
 
+about = {}
+with open("welt2000/__about__.py") as fp:
+    exec(fp.read(), about)
+
 
 def read(*paths):
     """Build a file path from *paths* and return the contents."""
@@ -19,14 +23,14 @@ def read_markdown(*paths):
 
 
 setup(
-    name='welt2000',
-    version='0.1.0',
-    description='a free airport and waypoint database',
+    name=about['__title__'],
+    version=about['__version__'],
+    description=about['__summary__'],
     long_description=read_markdown('README.md'),
-    url='http://github.com/Turbo87/welt2000/',
-    license='MIT',
-    author='Tobias Bieniek',
-    author_email='tobias.bieniek@gmx.de',
+    url=about['__uri__'],
+    license=about['__license__'],
+    author=about['__author__'],
+    author_email=about['__email__'],
     classifiers=[
         'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
