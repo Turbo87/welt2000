@@ -10,10 +10,13 @@ from welt2000.__about__ import (
 app = Flask(__name__)
 babel = Babel(app)
 
+translations = ['en']
+translations.extend(map(str, babel.list_translations()))
+
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(['en'])
+    return request.accept_languages.best_match(translations)
 
 
 from welt2000 import views  # noqa
