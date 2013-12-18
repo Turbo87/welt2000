@@ -10,3 +10,8 @@ def index():
 @app.route('/contribute')
 def contribute():
     return render_template('contribute.jinja')
+
+
+@app.route('/references')
+def references():
+    return render_template('references.jinja')
