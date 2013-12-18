@@ -42,4 +42,7 @@ setup(
         'Topic :: Database',
         'Topic :: Scientific/Engineering :: GIS',
     ],
+    install_requires=[
+        'flask==0.10.1',
+    ]
 )
