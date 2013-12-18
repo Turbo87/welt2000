@@ -1,23 +1,23 @@
 {% extends "_base.jinja" %}
 
 {% block content %}
-<h2>Welcome</h2>
+<h2>{{ _('Welcome') }}</h2>
 
-<p>WELT2000 is a free database of airports and waypoints worldwide. The data is the basis of a lot of instruments and software for airsports. WELT2000 is made by airsportsmen for airsportsmen.</p>
+<p>{{ _('WELT2000 is a free database of airports and waypoints worldwide. The data is the basis of a lot of instruments and software for airsports. WELT2000 is made by airsportsmen for airsportsmen.') }}</p>
 
 <ul>
-  <li>Release date: 02 Aug 2013</li>
-  <li>Airports: 22.781 worldwide</li>
-  <li>Waypoints: 57.257 worldwide</li>
+  <li>{{ _('Release date') }}: 02 Aug 2013</li>
+  <li>{{ _('Airports') }}: 22.781 {{ _('worldwide') }}</li>
+  <li>{{ _('Waypoints') }}: 57.257 {{ _('worldwide') }}</li>
 </ul>
 
 <img src="{{ url_for('static', filename='welt2000-screenshot.png') }}" style="max-width:400px">
 
-<p>More Informationen</p>
+<p>{{ _('More Informationen') }}</p>
 
 <ul>
-  <li><a href="{{ url_for('references') }}">Instruments and software</a></li>
-  <li><a href="{{ url_for('references') }}">Contributing</a></li>
-  <li><a href="">Database download</a></li>
+  <li><a href="{{ url_for('references') }}">{{ _('Instruments and software') }}</a></li>
+  <li><a href="{{ url_for('references') }}">{{ _('Contributing') }}</a></li>
+  <li><a href="">{{ _('Database download') }}</a></li>
 </ul>
 {% endblock %}

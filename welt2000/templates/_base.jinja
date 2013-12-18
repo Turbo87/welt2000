@@ -6,21 +6,21 @@
     <h1>WELT2000</h1>
 
     <p>
-    <a href="{{ url_for('index') }}">[Home]</a>
-    <a href="">[News]</a>
-    <a href="{{ url_for('contribute') }}">[Contribute]</a>
-    <a href="">[Downloads]</a>
-    <a href="{{ url_for('references') }}">[References]</a>
-    <a href="">[FAQ]</a>
+    <a href="{{ url_for('index') }}">[{{ _('Home') }}]</a>
+    <a href="">[{{ _('News') }}]</a>
+    <a href="{{ url_for('contribute') }}">[{{ _('Contribute') }}]</a>
+    <a href="">[{{ _('Downloads') }}]</a>
+    <a href="{{ url_for('references') }}">[{{ _('References') }}]</a>
+    <a href="">[{{ _('FAQ') }}]</a>
     </p>
 
     {% block content %}{% endblock %}
 
     <p>
-    <a href="">[Contact]</a>
-    <a href="">[Legal Terms]</a>
-    <a href="">[RSS]</a>
-    <a href="">[About]</a>
+    <a href="">[{{ _('Contact') }}]</a>
+    <a href="">[{{ _('Legal Terms') }}]</a>
+    <a href="">[{{ _('RSS') }}]</a>
+    <a href="">[{{ _('About') }}]</a>
     </p>
   </body>
 </html>

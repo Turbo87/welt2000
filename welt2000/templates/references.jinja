@@ -1,16 +1,16 @@
 {% extends "_base.jinja" %}
 
 {% block content %}
-<h2>References</h2>
+<h2>{{ _('References') }}</h2>
 
-<p>The WELT2000 database is the foundation of many devices and programs for aviation sports.</p>
+<p>{{ _('The WELT2000 database is the foundation of many devices and programs for aviation sports.') }}</p>
 
 <table>
   <tbody>
     <tr>
-      <th>Vendor</th>
-      <th>Product</th>
-      <th>Homepage</th>
+      <th>{{ _('Vendor') }}</th>
+      <th>{{ _('Product') }}</th>
+      <th>{{ _('Homepage') }}</th>
     </tr>
     <tr>
       <td>Henryk Birecki</td>
@@ -48,6 +48,6 @@
 </table>
 
 <p>
-  <a href="">Add a Device or Program</a>
+  <a href="">{{ _('Add a Device or Program') }}</a>
 </p>
 {% endblock %}

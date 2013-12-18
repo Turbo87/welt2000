@@ -1,23 +1,23 @@
 {% extends "_base.jinja" %}
 
 {% block content %}
-<h2>Contribute!</h2>
+<h2>{{ _('Contribute') }}</h2>
 
-<p>There are several ways to contribute to the WELT2000 project.</p>
+<p>{{ _('There are several ways to contribute to the WELT2000 project.') }}</p>
 
-<h3>You are a Pilot or Airfield-Operator?</h3>
+<h3>{{ _('You are a Pilot or Airfield-Operator?') }}</h3>
 
-<p>Examine the information for the airfields and waypoints with which you are familiar. Are they faulty? Is information missing? If the answer is "yes" then you should make a Contribution to the Database.</p>
+<p>{{ _('Examine the information for the airfields and waypoints with which you are familiar. Are they faulty? Is information missing? If the answer is "yes" then you should make a <a href="%(link)s">Contribution to the Database</a>.', link='') }}</p>
 
-<h3>You are Responsible for a Website?</h3>
+<h3>{{ _('You are Responsible for a Website?') }}</h3>
 
-<p>Integrate our RSS-Feed "WELT2000-Updates" into your site. By doing this you are advertising the project and offer your visitors a practical service. All relevant information is on the RSS-page.</p>
+<p>{{ _('Integrate our RSS-Feed "WELT2000-Updates" into your site. By doing this you are advertising the project and offer your visitors a practical service. All relevant information is on the <a href="%(link)s">RSS-page</a>.', link='') }}</p>
 
-<h3>You Have Ideas, Criticism, Wishes?</h3>
+<h3>{{ _('You Have Ideas, Criticism, Wishes?') }}</h3>
 
-<p>We welcome all feedback since this proves to us that we serve a purpose with this project. Contact</p>
+<p>{{ _('We welcome all feedback since this proves to us that we serve a purpose with this project.') }} <a href="">{{ _('Contact') }}</a></p>
 
-<h3>You Have Some Spare Cash Available?</h3>
+<h3>{{ _('You Have Some Spare Cash Available?') }}</h3>
 
-<p>Sponsor the segelflug.de site! The WELT2000 website is hosted free of charge by this platform - however the platform itself incurs costs. The segelflug.de and WELT2000 work entirely voluntarily. segelflug.de Contacts</p>
+<p>{{ _('Sponsor the segelflug.de site! The WELT2000 website is hosted free of charge by this platform - however the platform itself incurs costs. The segelflug.de and WELT2000 work entirely voluntarily. <a href="%(link)s">segelflug.de Contacts</a>', link='') }}</p>
 {% endblock %}
