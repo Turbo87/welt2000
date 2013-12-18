@@ -1,4 +1,4 @@
-# WELT2000
+# ![WELT2000](img/logo.png)
 
 __a free airport and waypoint database__
 
