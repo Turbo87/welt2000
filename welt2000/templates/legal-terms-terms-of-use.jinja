@@ -1,0 +1,42 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('Legal Terms') }}</h2>
+
+<h3>{{ _('Terms of Use') }}</h3>
+
+<p>{{ _('The WELT2000 database is made available under the %(license)s. Amongst other things this means:', license='<a href="http://www.opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL) 1.0 <img src="' + url_for('static', filename='external-link.png') + '"></a>') }}</p>
+<p>{{ _('For the database you are permitted:') }}</p>
+
+<ul>
+  <li>{{ _('to use: Use the database free-of-charge,') }}</li>
+  <li>{{ _('to distribute: Copy and distribute the database,') }}</li>
+  <li>{{ _('to process: Create your own work with the database,') }}</li>
+  <li>{{ _('to modify: Change, transform and extend the database,') }}</li>
+</ul>
+
+<p>{{ _('provided that you agree:') }}</p>
+
+<ul>
+  <li>{{ _('to reference: If you make the database publicly available you must inform the users about the license,') }}</li>
+  <li>{{ _('to license in a similar way: If you make an adapted version of the database public you must also place your work under ODbL,') }}</li>
+  <li>{{ _('to preserve the freedom: If you distribute a restricted version of the database you must make it just as easy for the recipients to obtain a free copy of the database.') }}</li>
+</ul>
+
+<p>{{ _('NOTE: The above text is not the entire license text; rather it is a summary of the most important points reduced to a form understandable by normal mortals.  Please also read the <a href="%(link)s" target="_blank">complete text %(symbol)s</a>.', link='http://www.opendatacommons.org/licenses/odbl/1.0/', symbol='<img src="' + url_for('static', filename='external-link.png') + '">') }}</p>
+
+<a name="demand-for-contribution"></a>
+<h3>{{ _('Call for Contributions') }}</h3>
+
+<p>{{ _('The WELT2000 project relies on contributions. Therefore you <i>should</i> advertise WELT2000 wherever possible.') }}</p>
+
+<p>{{ _('As an extension to the Terms of Use as formulated in ODbL you <i>must</i> call for contributions when you redistribute the database (whether whole or in part) or create your own product with it or extend the dabase contents.') }}</p>
+
+<p>{{ _('Hence at the places where ODbL has a reference to the license text or requires the inclusion of the same you must include a reference to the WELT2000 website, together with a call to contribute.') }}</p>
+
+<p>{{ _('Example:') }}<br><em>{{ _('Contains information from the <a href="%(welt2000)s" target="_blank">WELT2000 Database</a> and is made available here under the terms of the <a href="%(odbl)s" target="_blank">Open Database Licence %(symbol)s</a>. Contribute to the <a href="%(welt2000)s" target="_blank">WELT2000 Project</a>!', welt2000='http://www.segelflug.de/vereine/welt2000/', odbl='http://opendatacommons.org/licenses/odbl/1.0/', symbol='<img src="' + url_for('static', filename='external-link.png') + '">') }}</em></p>
+
+<h3>{{ _('Official Aviation Publications') }}</h3>
+
+<p>{{ _('The use of the current publications from the relevant aviation authorities is a part of the responsibities of an aviator.  WELT2000 only serves as a support during the preparation of and whilst carring out flights.  It must be seen as an addition to the official publications.  The WELT2000 database is no subsitute for the latter.') }}</p>
+{% endblock %}
