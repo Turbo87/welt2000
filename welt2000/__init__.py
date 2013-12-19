@@ -1,4 +1,4 @@
-from flask import Flask, request, session
+from flask import Flask, request, session, current_app
 from flask.ext.babel import Babel
 from babel.core import negotiate_locale
 
@@ -13,19 +13,19 @@ app.secret_key = '1234567890'
 
 babel = Babel(app)
 
-translations = ['en']
-translations.extend(map(str, babel.list_translations()))
-
 
 @app.template_global()
 @babel.localeselector
 def get_locale():
+    available = ['en']
+    available.extend(map(str, current_app.babel_instance.list_translations()))
+
     lang = session.get('lang')
-    if lang and lang in translations:
+    if lang and lang in available:
         return lang
 
     preferred = map(lambda l: l[0], request.accept_languages)
-    return negotiate_locale(preferred, translations)
+    return negotiate_locale(preferred, available)
 
 
 from welt2000 import views  # noqa
