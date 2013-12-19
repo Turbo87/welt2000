@@ -1,0 +1,15 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('Legal Terms') }}</h2>
+
+<h3>{{ _('Limitation of Liability') }}</h3>
+
+<p>{{ _('The contents of this web site - including the WELT2000 database are created with the greatest of care. However the provider does not guarantee the accuracy, completeness or currency of the available content.  Use of this web site is at your own risk.  In particular contributions by named persons represent the opinion of the author and not necessarily the opinion of the provider.') }}</p>
+
+<h3>{{ _('External Links') }}</h3>
+
+<p>{{ _('The operator of this web site is not liable for the content of external Internet sites which are linked to from the WELT2000 site. Links to external sites are indicated by the symbol %(symbol)s. The content of such external sites adhere to current laws as far as the provider of this homepage is aware.', symbol='<img src="' + url_for('static', filename='external-link.png') + '">') }}</p>
+
+<p>{{ _('These contents are either external contents according to German law §5 II MDStv. or not our own content according to German law §8 I TDG. The operator of this site is not aware of possible violations of laws committed by external sites. Should any such violations take place on external sites without the knowledge of this operator, then the operator dissociates themselves from these violations. The operator also distances themselves from any other lawful and unlawful content of external sites, for which only the operators of those sites are responsible and for which the operator of this website has no control.') }}</p>
+{% endblock %}
