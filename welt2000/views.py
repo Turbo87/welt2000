@@ -17,6 +17,11 @@ def references():
     return render_template('references.jinja')
 
 
+@app.route('/404')
+def not_available():
+    return render_template('not-available.jinja')
+
+
 @app.route('/lang/<lang>')
 def lang(lang):
     session['lang'] = lang
