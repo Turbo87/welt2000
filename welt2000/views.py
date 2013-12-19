@@ -52,6 +52,11 @@ def legal_contribution():
     return render_template('legal-terms-contribution.jinja')
 
 
+@app.route('/legal-terms/contributor-terms')
+def legal_contributor_terms():
+    return render_template('legal-terms-contributor-terms.jinja')
+
+
 @app.route('/legal-terms/website')
 def legal_website():
     return render_template('legal-terms-website.jinja')
