@@ -32,7 +32,7 @@ setup(
     author=about['__author__'],
     author_email=about['__email__'],
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 2 - Pre-Alpha',
         'Environment :: Web Environment',
         'Framework :: Flask',
         'Intended Audience :: Developers',
