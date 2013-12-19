@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WELT2000 0.1.0\n"
 "Report-Msgid-Bugs-To: tobias.bieniek@gmx.de\n"
-"POT-Creation-Date: 2013-12-19 13:48+0100\n"
+"POT-Creation-Date: 2013-12-19 14:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgid "Instruments/Software"
 msgstr ""
 
 #: welt2000/templates/contact.jinja:20
-#: welt2000/templates/legal-terms-contributor-terms.jinja:42
+#: welt2000/templates/legal-terms-contributor-terms.jinja:46
 msgid "Miscellaneous"
 msgstr ""
 
@@ -165,6 +165,7 @@ msgid "Create Mail"
 msgstr ""
 
 #: welt2000/templates/contact.jinja:37
+#: welt2000/templates/contribute-data.jinja:43
 msgid ""
 "Note: The assistent can only help you if in your browser the protocol "
 "\"mailto\" is allocated to an application (e.g. Thunderbird) or an add-on"
@@ -789,12 +790,19 @@ msgstr ""
 msgid "Contributor Terms"
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:9
+#: welt2000/templates/legal-terms-contributor-terms.jinja:10
+#, python-format
+msgid ""
+"This text is an unofficial translation. Click <a "
+"href=\"%(link)s\">here</a> to view the original."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:13
 #, python-format
 msgid "Version %(version)s as amended on %(date)s"
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:11
+#: welt2000/templates/legal-terms-contributor-terms.jinja:15
 msgid ""
 "Thank you for your interest in contributing data and/or any other content"
 " (collectively, “Contents”) to the geo-database of the WELT2000 project "
@@ -805,14 +813,14 @@ msgid ""
 "carefully."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:14
+#: welt2000/templates/legal-terms-contributor-terms.jinja:18
 msgid ""
 "We respect the intellectual property rights of others and we need to be "
 "able to respond to any objections by intellectual property owners. This "
 "means that:"
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:16
+#: welt2000/templates/legal-terms-contributor-terms.jinja:20
 msgid ""
 "Your contribution of data should not infringe the intellectual property "
 "rights of anyone else. If you contribute Contents, You are indicating "
@@ -822,7 +830,7 @@ msgid ""
 "below)."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:17
+#: welt2000/templates/legal-terms-contributor-terms.jinja:21
 msgid ""
 "Please note that the Project does not have to include Contents You "
 "contribute in the Project, and may remove Your contributions from the "
@@ -832,11 +840,11 @@ msgid ""
 " sections 3 and 4), then we may delete that data."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:22
+#: welt2000/templates/legal-terms-contributor-terms.jinja:26
 msgid "Rights Granted"
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:25
+#: welt2000/templates/legal-terms-contributor-terms.jinja:29
 msgid ""
 "Subject to Section 3 and 4 below, You hereby grant to the Project a "
 "worldwide, royalty-free, non-exclusive, perpetual, irrevocable licence to"
@@ -852,7 +860,7 @@ msgid ""
 " that You may have in the Contents."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:27
+#: welt2000/templates/legal-terms-contributor-terms.jinja:31
 msgid ""
 "The Project agrees that it may only use or sub-license Your Contents as "
 "part of a database and only under the terms of one or more of the "
@@ -867,7 +875,7 @@ msgid ""
 "interest over time); and responds to a request to vote within 3 weeks."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:29
+#: welt2000/templates/legal-terms-contributor-terms.jinja:33
 #, python-format
 msgid ""
 "At Your or the copyright owner’s option, the Project agrees to attribute "
@@ -875,18 +883,18 @@ msgid ""
 " page %(link)s."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:31
+#: welt2000/templates/legal-terms-contributor-terms.jinja:35
 msgid ""
 "Except as set forth herein, You reserve all right, title, and interest in"
 " and to Your Contents."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:34
+#: welt2000/templates/legal-terms-contributor-terms.jinja:38
 #: welt2000/templates/legal-terms-website.jinja:6
 msgid "Limitation of Liability"
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:37
+#: welt2000/templates/legal-terms-contributor-terms.jinja:41
 msgid ""
 "To the extent permitted by applicable law, You provide the Contents “as "
 "is” without warranty of any kind, either express or implied, including "
@@ -894,7 +902,7 @@ msgid ""
 "fitness for a particular purpose, or otherwise."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:39
+#: welt2000/templates/legal-terms-contributor-terms.jinja:43
 msgid ""
 "Subject to any liability that may not be excluded or limited by law, "
 "neither You nor the Project shall be liable for any special, indirect, "
@@ -904,7 +912,7 @@ msgid ""
 "possibility of such damages."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:45
+#: welt2000/templates/legal-terms-contributor-terms.jinja:49
 msgid ""
 "This Agreement shall be governed by English law without regard to "
 "principles of conflict of law. You agree that the United Nations "
@@ -917,7 +925,7 @@ msgid ""
 "or other, relating to the subject matter of this agreement."
 msgstr ""
 
-#: welt2000/templates/legal-terms-contributor-terms.jinja:48
+#: welt2000/templates/legal-terms-contributor-terms.jinja:52
 #, python-format
 msgid "Content is available under %(license)s."
 msgstr ""

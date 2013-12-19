@@ -6,6 +6,10 @@
 <a name="contributor-terms"></a>
 <h2>{{ _('Contributor Terms') }}</h2>
 
+{% if get_locale() != 'en' -%}
+<p>{{ _('This text is an unofficial translation. Click <a href="%(link)s">here</a> to view the original.', link=url_for('lang', lang='en')) }}</p>
+{%- endif %}
+
 <p>{{ _('Version %(version)s as amended on %(date)s', version='1.0', date='12. Oct 2011') }}</p>
 
 <p>{{ _('Thank you for your interest in contributing data and/or any other content (collectively, “Contents”) to the geo-database of the WELT2000 project (the “Project”). This contributor agreement (the “Agreement”) is made between you (“You”) and the Project and clarifies the intellectual property rights in any Contents that You choose to submit to the Project in this user account. Please read the following terms and conditions carefully.') }}</p>
