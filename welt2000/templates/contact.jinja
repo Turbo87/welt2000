@@ -9,7 +9,7 @@
 <noscript>{{ _('Please enable JavaScript!') }}</noscript>
 <div id="wizard" style="visibility:hidden">
 
-<p>{{ _('Please use this assistant when creating your mail. This helps us process your information.  Select a subject from the following list and click on "Create Mail" (below). If you want to report on an error in the database, please use the <a href="%(link)s">form to contribute to the database</a> instead.', link=url_for('not_available')) }}</p>
+<p>{{ _('Please use this assistant when creating your mail. This helps us process your information.  Select a subject from the following list and click on "Create Mail" (below). If you want to report on an error in the database, please use the <a href="%(link)s">form to contribute to the database</a> instead.', link=url_for('contribute_data')) }}</p>
 
 <form name="fmSubjects">
 <select name="slSubjects" onChange="formChange()">

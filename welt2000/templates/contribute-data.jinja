@@ -1,0 +1,45 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h1>{{ _('Contributing to the Database') }}</h1>
+
+<p>{{ _('It is very easy to contribute to the WELT2000-Database.  Just send us a mail with your data.  However in order that this can be added to the WELT2000-database your mail must include two additional items.') }}</p>
+
+<p>{{ _('This assistent helps you to create your mail in three easy steps:') }}</p>
+
+<script type="text/javascript" src="{{ url_for('static', filename='contribution-wizard.js') }}"></script>
+<noscript>{{ _('Enable JavaScript!!') }}</noscript>
+<div id="wizard" style="visibility:hidden">
+
+<form name="fmChecks">
+<input type="hidden" name="hiLang" value="EN">
+<ol>
+  <li>
+    {{ _('Please read the
+        <a href="%(contribution_link)s" target="_blank">Terms for Contributors</a> and the
+        <a href="%(privacy_link)s" target="_blank">Privacy Policy</a>.', contribution_link=url_for('not_available'), privacy_link=url_for('not_available')) }}
+  </li>
+  <li>{{ _('Accept') }}:<br>
+    <input type="checkbox" name="cbContribTerms" onClick="formChange('{{ get_locale() }}')">{{ _('I accept the
+          <a href="%(contribution_link)s">Conditions for Contributors</a>!', contribution_link=url_for('not_available')) }}<br>
+    <input type="checkbox" name="cbPrivPolicy" onClick="formChange('{{ get_locale() }}')">{{ _('I accept the
+          <a href="%(privacy_link)s">Data-Protection Conditions</a>!', privacy_link=url_for('not_available')) }}<br>
+    <span id="message" style="color:red; font-weight:bold">
+      {{ _('You must accept BOTH conditions!') }}
+    </span>
+  </li>
+  <li>
+    <a href="" id="maillink">{{ _('Create the mail') }}</a>
+  </li>
+</ol>
+</form>
+
+</div>
+
+<script type="text/javascript">
+document.getElementById("wizard").style.visibility = "visible";
+</script>
+
+<p class="note">Note: The assistent can only help you if in your browser the protocol "mailto" is allocated to an application (e.g. Thunderbird) or an add-on (e.g. "Send Mail in Browser" for Firefox).</p>
+
+{% endblock %}
