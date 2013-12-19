@@ -1,0 +1,81 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<a name="top"></a>
+<h2>{{ _('Frequently Asked Questions') }}</h2>
+
+<p>{{ _('Here we try to answer questions that are frequently asked.  If you do not find the answer to your question just <a href="%(link)s">Ask by Mail</a>.', link=url_for('contact')) }}</p>
+
+<ul>
+  <li><a href="#what-is-it">{{ _('What is WELT2000?') }}</a></li>
+  <li><a href="#what-data">{{ _('Which Data are in the Database?') }}</a></li>
+  <li><a href="#why">{{ _('Why Are you Doing This?') }}</a></li>
+  <li><a href="#who-is-milomei">{{ _('Who is Michael-Lorenz Meier and what is MILOMEI?') }}</a></li>
+  <li><a href="#how-to-contribute">{{ _('How can I Contribute?') }}</a></li>
+  <li><a href="#how-to-update">{{ _('How can I Load the Data into my  Navigation Device?') }}</a></li>
+</ul>
+
+<a name="what-is-it"></a>
+<h3>{{ _('What is WELT2000?') }}</h3>
+
+<p>{{ _('WELT2000 is a database which holds world-wide data for airfields and waypoints.  Additionally there is a program for managing the data.  Database and program are free of charge!  This means that they can be used and passed onto without charge.  They may also be integrated into commercial products as long as one adheres to a few simple rules.  The WELT2000 database is included into their products by many device and software manufacturers.  If you are involved with avaiation sports you have probably already used the data.') }}</p>
+<p>{{ _('Further Information') }}:</p>
+<ul>
+  <li><a href="{{ url_for('legal_terms_of_use') }}">{{ _('WELT2000 Conditions of Use') }}</a></li>
+  <li><a href="{{ url_for('references') }}">{{ _('Devices and Programs with WELT2000 Data') }}</a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="what-data"></a>
+<h3>{{ _('Which Data are in the Database?') }}</h3>
+
+<p>{{ _('Currently the database contains the coordinates and elevation of airfields, gliding sites, ultralight flieds, landing-out strips and waypoints.  Additionally for all sites where one can land the runway orientation, the length and the surface type is included.  If there is an allocated radio frequency and an ICAO-Code these are also included.') }}<br />
+{{ _('The database structure is described in the "Database Format
+Specification" which is available in the download area.') }}</p>
+<p>{{ _('Further Information') }}:</p>
+<ul>
+  <li><a href="{{ url_for('not_available') }}#documentation">{{ _('Download Documentation') }}</a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="why"></a>
+<h3>{{ _('Why Are you Doing This?') }}</h3>
+
+<p>{{ _('Because one requires correct geodata for safe and stress-free flying and that a database such as WELT2000 would be otherwise not be available - not for love nor money!  Other databases restrict themselves to single countries (e.g. Christian Hynek\'s SIP) or omit airfields relevant to aviation sports (e.g. the aviation authorities databases) or they are restricted to specific types of information (e.g. out-landing catalogue or the DULV database).') }}</p>
+<p>{{ _('Further Information') }}:</p>
+<ul>
+  <li><a href="http://sip.streckenflug.at" target="blank">Soaring Information Publication <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.dulv.de/fmi/xsl/Flugplatzdatenbank/home.xsl" target="_blank">DULV Airfield Database <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="who-is-milomei"></a>
+<h3>{{ _('Who is Michael-Lorenz Meier and what is MILOMEI?') }}</h3>
+
+<p>{{ _('Michael-Lorenz Meier was a glider pilot from Boberg near Hamburg who, at the start of the 1990s, began to systematically gather coordinates of airfields and waypoints within Germany and to manage these with a program that he wrote.  MILOMEI is the abbreviation that Michael chose which he used for some of his projects as a "Branding".  The WELT2000 project was known outside the borders of Germany and since it was easier to pronounce MILOMEI in other languages, MILOMEI bacame a synonym for the project.') }}</p>
+<p>{{ _('Further Information') }}:</p>
+  <ul>
+  <li><a href="{{ url_for('history') }}">{{ _('How it all Began') }}</a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="how-to-contribute"></a>
+<h3>{{ _('How can I Contribute?') }}</h3>
+
+<p>{{ _('The most important activity is supplying data for the database since without the knowledge of local aviation enthusiasts, who are informed about changes to airfields, the project would not be able to continue.  There are many additional things that need to be done.') }}</p>
+<p>{{ _('Further Information') }}:</p>
+<ul>
+  <li><a href="{{ url_for('contribute') }}">{{ _('Contribute') }}</a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="how-to-update"></a>
+<h3>{{ _('How can I Load the Data into my Navigation Device?') }}</h3>
+
+<p>{{ _('Currently our help here is limited and we have to refer you to the manufacturers of the various devices.  We can generate the data from the database in various device and program-specific formats but we are unable to supply support or various programs.  Only the owners of Garmin© devices profit from the fact that Michael owned a GARMIN©-GPS device which he included in the WELT2000 program functions as well as instructions for data transfer.') }}</p>
+<p>{{ _('Further Information') }}:</p>
+<ul>
+  <li><a href="{{ url_for('not_available') }}#programs">{{ _('Downloading the WELT2000 program') }}</a></li>
+</ul>
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+{% endblock %}
