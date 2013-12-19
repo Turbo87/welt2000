@@ -1,0 +1,50 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('RSS') }}</h2>
+
+<h3>{{ _('Content') }}</h3>
+
+<p>{{ _('By subscribing to the RSS feed "WELT2000 Updates" you can receive notifications about updates of the WELT2000 database. In contrast to the "WELT2000 News & Updates" newsletter the RSS feed broadcasts notifications about modified data only. Other important information, e.g. changes of the database structure or the website, are sent over the newsletter only.') }}</p>
+
+<ul>
+  <li><a href="{{ url_for('news_updates_xml') }}">{{ _('Subscribe to RSS-Feed "WELT2000 Updates"') }} <img src="{{ url_for('static', filename='feed-icon.png') }}" border="0"></a></li>
+  <li><a href="{{ url_for('not_available') }}">{{ _('More about Newsletter "WELT2000 News & Updates"') }}</a></li>
+</ul>
+
+<h3>EN:Internet-Seiten Integration</h3>
+
+<p>Der RSS-Feed ist in erster Linie dafür vorgesehen, Aktualisierungsmeldungen auf einer anderen Internet-Seite (z.B. Vereins-Homepage oder Website eines Navigationsprogramms) anzuzeigen, um deren Besucher auf den jeweils aktuellen Datenbestand hinzuweisen, ohne dass der Webmaster dafür aktiv werden muss.</p>
+<p>Dafür reicht schon ein simples JavaScript. Das WELT2000-Team stellt ein solches Script nebst Einbauanleitung zur Verfügung.</p>
+
+<ul>
+  <li><a href="{{ url_for('not_available') }}">WELT2000-RSS-Feed-Script</a></li>
+</ul>
+
+<p>Noch besser funktioniert die Feed-Integration mit Content-Management-Systemen (CMS). Prominente CMS-Vertreter mit Funktion zur Feed-Integration sind:</p>
+
+<ul>
+  <li><a href="http://www.drupal.org" target="_blank">Drupal <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.joomla.org" target="_blank">Joomla <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.typo3.org" target="_blank">Typo3 <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+</ul>
+
+<p>Für die Integration eines Feeds mit Hilfe eines CMS verweisen wir auf die dessen Dokumentation. In der Regel ist auch das sehr einfach und gut dokumentiert. Der URL des RSS-Feeds lautet <a href="{{ url_for('news_updates_xml') }}">{{ url_for('news_updates_xml', _external=True) }} <img src="{{ url_for('static', filename='feed-icon.png') }}" border="0"></a></p>
+</p>
+
+<h3>EN:Feed-Reader</h3>
+
+<p>Darüber hinaus kannst Du den RSS-Feed auch mit einem Webbrowser, einem Mail-Programm oder einem spezielles Feed-Reader-Programm nutzen. Verbreitete Programme mit RSS-Feed-Reader-Funktion sind:</p>
+
+<ul>
+  <li><a href="http://www.mozilla.com/" target="_blank">Mozilla Firefox <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.microsoft.com/" target="_blank">Microsoft Internet Explorer <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.apple.com/de/safari/" target="_blank">Apple Safari <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.google.com/chrome/" target="_blank">Google Chrome <img src="{{ url_for('static', filename='external-link.png') }}"></a> (mit Erweiterung)</li>
+  <li><a href="http://www.opera.com/" target="_blank">Opera Webbrowser <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.mozilla.com/" target="_blank">Mozilla Thunderbird <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://www.microsoft.com/" target="_blank">Microsoft Outlook <img src="{{ url_for('static', filename='external-link.png') }}"></a> (mit Add-On)</li>
+</ul>
+
+<p>Sehr wahrscheinlich unterstützt Dein Webbrowser RSS-Feeds. Probiere es einfach mal aus. Um den Feed zu abonnieren, reicht ein Klick auf das RSS-Symbol <a href="{{ url_for('news_updates_xml') }}"><img src="{{ url_for('static', filename='feed-icon.png') }}" border="0"></a></p>
+{% endblock %}

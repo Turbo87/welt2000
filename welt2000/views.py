@@ -7,6 +7,11 @@ def index():
     return render_template('index.jinja')
 
 
+@app.route('/news/updates.xml')
+def news_updates_xml():
+    return not_available()
+
+
 @app.route('/contribute')
 def contribute():
     return render_template('contribute.jinja')
@@ -35,6 +40,11 @@ def contact():
 @app.route('/legal-terms')
 def legal_terms():
     return render_template('legal-terms.jinja')
+
+
+@app.route('/rss')
+def rss():
+    return render_template('rss.jinja')
 
 
 @app.route('/about')
