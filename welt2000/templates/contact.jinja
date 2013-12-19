@@ -1,0 +1,38 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('Contact') }}</h2>
+
+<p>{{ _('We welcome <i>all</i> feedback and <i>always</i> respond - unfortunately there can be a delay before we are able to react (daytime jobs!).   Hence we appologise in advance should this occur.') }}</p>
+
+<script type="text/javascript" src="{{ url_for('static', filename='contact-wizard.js') }}"></script>
+<noscript>{{ _('Please enable JavaScript!') }}</noscript>
+<div id="wizard" style="visibility:hidden">
+
+<p>{{ _('Please use this assistant when creating your mail. This helps us process your information.  Select a subject from the following list and click on "Create Mail" (below). If you want to report on an error in the database, please use the <a href="%(link)s">form to contribute to the database</a> instead.', link=url_for('not_available')) }}</p>
+
+<form name="fmSubjects">
+<select name="slSubjects" onChange="formChange()">
+  <option>--- {{ _('select a subject') }} ---</option>
+  <option>{{ _('Question') }}</option>
+  <option>{{ _('Feedback') }}</option>
+  <option>{{ _('Instruments/Software') }}</option>
+  <option>{{ _('Miscellaneous') }}</option>
+</select>
+</form>
+
+<p>
+  <span id="message" style="color:red; font-weight:bold">
+  {{ _('Please select a subject.') }}
+  </span>
+</p>
+
+<script type="text/javascript">
+document.getElementById("wizard").style.visibility = "visible";
+</script>
+
+<a href="" id="maillink">{{ _('Create Mail') }}</a>
+</div>
+
+<p class="note">{{ _('Note: The assistent can only help you if in your browser the protocol "mailto" is allocated to an application (e.g. Thunderbird) or an add-on (e.g. "Send Mail in Browser" for Firefox).') }}</p>
+{% endblock %}

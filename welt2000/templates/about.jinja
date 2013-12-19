@@ -11,7 +11,7 @@
   <li>Willy Dobé</li>
 </ul>
 
-<p>{{ _('We can be contacted by e-mail via <a href="%(link)s">contact</a>.', link=url_for('not_available')) }}</p>
+<p>{{ _('We can be contacted by e-mail via <a href="%(link)s">contact</a>.', link=url_for('contact')) }}</p>
 
 <p>{{ _('Geman legal requirement') }}: <i>Inhaltlich Verantwortlicher gemäß § 6 MDStV: Howard E. Mills </i></p>
 
@@ -60,6 +60,6 @@
 </ul>
 
 <p>
-  <a href="{{ url_for('not_available') }}">{{ _('Add your name to the list of contributors here') }}</a>.
+  <a href="{{ url_for('contact') }}">{{ _('Add your name to the list of contributors here') }}</a>.
 </p>
 {% endblock %}
