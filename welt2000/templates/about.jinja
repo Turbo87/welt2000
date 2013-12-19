@@ -1,0 +1,65 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('About This Site') }}</h2>
+
+<p>{{ _('These web pages together with WELT2000 database and the WELT2000 program are made available with no comercial interests or intentions and are exclusively operated and made available by volunteers:') }}</p>
+
+<ul>
+  <li>Michael Köster</li>
+  <li>Howard E. Mills</li>
+  <li>Willy Dobé</li>
+</ul>
+
+<p>{{ _('We can be contacted by e-mail via <a href="%(link)s">contact</a>.', link=url_for('not_available')) }}</p>
+
+<p>{{ _('Geman legal requirement') }}: <i>Inhaltlich Verantwortlicher gemäß § 6 MDStV: Howard E. Mills </i></p>
+
+<p>{{ _('Further legal information can be found <a href="%(link)s">here</a>.', link=url_for('not_available')) }}</p>
+
+<a name="contributors"></a>
+<h3>{{ _('Contributors') }}</h3>
+
+<p>{{ _('The WELT2000 project was started by Michael-Lorenz Meier who managed it for the first 18 years.  You can read about how it all began in a brief <a href="%(link)s">history</a>. Unfortunately Michael passed away on the 7th January 2008 aged 71 following a severe illness.', link=url_for('not_available')) }}</p>
+
+<p>{{ _('This project would not have attained its current status, either under Michael\'s control or that of the current team, if numerous others had not also been involved.') }}</p>
+
+<ul>
+  <li>Anders Mølgaard, DK</li>
+  <li>Andreas Lüthi, CH</li>
+  <li>Andreas Pfaller</li>
+  <li>Axel Pauli, DE</li>
+  <li>Bernd Mitze, DE</li>
+  <li>Burkhard Lenz, DE</li>
+  <li>Carsten Sónyi, DE</li>
+  <li>Frank Beythien, DE</li>
+  <li>Frank van der Hulst, NZ</li>
+  <li>Gerhard Windischbauer, AT</li>
+  <li>HH. Hölter, DE</li>
+  <li>Howard Mills, DE</li>
+  <li>Ingemar From, SE</li>
+  <li>Johannes Lutz</li>
+  <li>John McCullagh</li>
+  <li>Juha Huvilinna</li>
+  <li>Klaus Melchinger, DE</li>
+  <li>Luc Beerts, BE</li>
+  <li>Markus Flosbach</li>
+  <li>Michael Köster, DE</li>
+  <li>Michael Kusa, DE</li>
+  <li>Michael-Lorenz Meier, DE</li>
+  <li>Peter Cutting, SE</li>
+  <li>Peter Kemme, DE</li>
+  <li>Quint Seegers</li>
+  <li>Sascha Haffner, DE</li>
+  <li>Terry Bellair, AU</li>
+  <li>Thomas Spagl, DE</li>
+  <li>Tobias Lohner, DE</li>
+  <li>Tomek Ziarko</li>
+  <li>Ulrich Heynen, DE</li>
+  <li>Willy Dobé, DE</li>
+</ul>
+
+<p>
+  <a href="{{ url_for('not_available') }}">{{ _('Add your name to the list of contributors here') }}</a>.
+</p>
+{% endblock %}

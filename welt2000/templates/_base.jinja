@@ -20,7 +20,7 @@
     <a href="{{ url_for('not_available') }}">[{{ _('Contact') }}]</a>
     <a href="{{ url_for('not_available') }}">[{{ _('Legal Terms') }}]</a>
     <a href="{{ url_for('not_available') }}">[{{ _('RSS') }}]</a>
-    <a href="{{ url_for('not_available') }}">[{{ _('About') }}]</a>
+    <a href="{{ url_for('about') }}">[{{ _('About') }}]</a>
 
     {% if get_locale() == 'de' -%}
     <a href="{{ url_for('lang', lang='en') }}"><img src="{{ url_for('static', filename='flags/gb.png') }}"></a>
