@@ -1,0 +1,27 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('Legal Terms') }}</h2>
+
+<a name="privacy-policy"></a>
+<h3>{{ _('Privacy Policy') }}</h3>
+
+<h4>{{ _('Personal Data') }}</h4>
+
+<p>{{ _('Generally this website does neither collect, store, nor process personal data.') }}</p>
+
+<p>{{ _('The only exceptions are:') }}</p>
+
+<ol>
+  <li>{{ _('If a person contributes data or any other content, the email address of that person is stored to be able to protect the person\'s intellectual property rights. For more information about this, please refer to the <a href="%(link)s">Contributor Terms</a>. The email address is only used to communicate with the contributor regarding its rights.', link=url_for('legal_contributor_terms')) }}</li>
+  <li>{{ _('If a person requests to receive a WELT2000 newsletter, the email address is added to the list of subscribers of that newsletter. The email address is used only for that particular newsletter. When more newsletters are introduced, subscribers of existing newsletters are not added to the new subscribers list unless otherwise expressly agreed.') }}</li>
+</ol>
+
+<p>{{ _('Personal data is not made publically available nor forwarded to third parties under any circumstances.') }}</p>
+
+<h4>{{ _('Web Analytic') }}s</h4>
+
+<p>{{ _('This website uses etracker technology (%(link)s) to collect visitor behavior data. The data is collected anonymously to be used for marketing and optimization purposes. All visitor data is saved using an anonymous user ID to aggregate a usage profile. Cookies may be used for this purpose. Cookies are small text files that are stored in the visitor\'s local browser cache. Using such cookies it is possible to recognize the visitor\'s browser.', link='<a href="http://www.etracker.com" target="_blank">www.etracker.com <img src="' + url_for('static', filename='external-link.png') + '"></a>') }}<br>
+{{ _('The data collected via etracker technology will not be used to determine the personal identity of the website visitor or compiled with personal data pertaining to the user of the pseudonym unless agreed to separately by the person concerned. The collection and storage of data may be <a target="_blank" href="%(link)s">refused %(symbol)s</a> at any time with respect to subsequent services.', link='http://www.etracker.de/privacy?et=null', symbol='<img src="' + url_for('static', filename='external-link.png') + '">') }}</p>
+
+{% endblock %}

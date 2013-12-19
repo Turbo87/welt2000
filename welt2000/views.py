@@ -62,6 +62,11 @@ def legal_terms_of_use():
     return render_template('legal-terms-terms-of-use.jinja')
 
 
+@app.route('/legal-terms/privacy-policy')
+def legal_privacy_policy():
+    return render_template('legal-terms-privacy-policy.jinja')
+
+
 @app.route('/legal-terms/website')
 def legal_website():
     return render_template('legal-terms-website.jinja')
