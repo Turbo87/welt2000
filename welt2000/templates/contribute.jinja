@@ -19,5 +19,5 @@
 
 <h3>{{ _('You Have Some Spare Cash Available?') }}</h3>
 
-<p>{{ _('Sponsor the segelflug.de site! The WELT2000 website is hosted free of charge by this platform - however the platform itself incurs costs. The segelflug.de and WELT2000 work entirely voluntarily. <a href="%(link)s">segelflug.de Contacts</a>', link='') }}</p>
+<p>{{ _('Sponsor the segelflug.de site! The WELT2000 website is hosted free of charge by this platform - however the platform itself incurs costs. The segelflug.de and WELT2000 work entirely voluntarily. <a href="%(link)s">segelflug.de Contacts %(symbol)s</a>', link='http://www.segelflug.de/impressum.html', symbol='<img src="' + url_for('static', filename='external-link.png') + '">') }}</p>
 {% endblock %}
