@@ -1,5 +1,6 @@
 from flask import Flask, request, session
 from flask.ext.babel import Babel
+from babel.core import negotiate_locale
 
 from welt2000.__about__ import (
     __title__, __summary__, __uri__, __version__, __author__, __email__,
@@ -23,7 +24,8 @@ def get_locale():
     if lang and lang in translations:
         return lang
 
-    return request.accept_languages.best_match(translations)
+    preferred = map(lambda l: l[0], request.accept_languages)
+    return negotiate_locale(preferred, translations)
 
 
 from welt2000 import views  # noqa
