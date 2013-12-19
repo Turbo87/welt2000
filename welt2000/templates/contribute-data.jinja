@@ -17,13 +17,13 @@
   <li>
     {{ _('Please read the
         <a href="%(contribution_link)s" target="_blank">Terms for Contributors</a> and the
-        <a href="%(privacy_link)s" target="_blank">Privacy Policy</a>.', contribution_link=url_for('not_available'), privacy_link=url_for('not_available')) }}
+        <a href="%(privacy_link)s" target="_blank">Privacy Policy</a>.', contribution_link=url_for('legal_contributor_terms'), privacy_link=url_for('legal_privacy_policy')) }}
   </li>
   <li>{{ _('Accept') }}:<br>
     <input type="checkbox" name="cbContribTerms" onClick="formChange('{{ get_locale() }}')">{{ _('I accept the
-          <a href="%(contribution_link)s">Conditions for Contributors</a>!', contribution_link=url_for('not_available')) }}<br>
+          <a href="%(contribution_link)s">Conditions for Contributors</a>!', contribution_link=url_for('legal_contributor_terms')) }}<br>
     <input type="checkbox" name="cbPrivPolicy" onClick="formChange('{{ get_locale() }}')">{{ _('I accept the
-          <a href="%(privacy_link)s">Data-Protection Conditions</a>!', privacy_link=url_for('not_available')) }}<br>
+          <a href="%(privacy_link)s">Data-Protection Conditions</a>!', privacy_link=url_for('legal_privacy_policy')) }}<br>
     <span id="message" style="color:red; font-weight:bold">
       {{ _('You must accept BOTH conditions!') }}
     </span>
