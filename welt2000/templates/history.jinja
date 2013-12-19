@@ -1,0 +1,27 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>WELT2000 - {{ _('How it all Began') }}</h2>
+
+<h3>{{ _('Motivation') }}</h3>
+
+<p>{{ _('At the start of the 1990s Michael-Lorenz Meier (also known as Milomei), a glider pilot from Boberg near Hamburg, began with the help of his wife Antje  to systematically gather coordinates of airfields and waypoints within Germany and to manage these with a program that he wrote.') }}</p>
+
+<p>{{ _('The trigger for this initiative was the availability of GPS receivers combined with the "discovery" that many of the coordinates that were shown in the official aviation publications such as the AIP or the German <i>Fliegertaschenkalender</i> were incorrect.  For example he discovered that the nearby gliding airfield Grambeker-Heide was shown 1.5 km to far to the West thus implying that it was located in the middle of the Elbe-Lübeck canal.  He suspected that this was knowingly falsified on military &amp; political grounds during the Cold War.') }}</p>
+
+<p>{{ _('Such inaccuracies were unacceptable for a glider pilot such as Michael since the advent of GPS enables precise final glides to be made into unknown airfields in perfect safety.  However one must be able to reply on the location information for the airfield - with modern gliders the approach angle is so low that one will possibly not see the airfield even from a short distance and would recognise an error at a very late stage.') }}</p>
+
+<h3>{{ _('The Idea Makes Waves') }}</h3>
+
+<p>{{ _('Initially Michael measured the coordinates of nearby airfields and waypoints by visiting them on the ground and using a GPS-receiver.  Subsequently he wrote to glider clubs requesting that they determine their coordinates in a similar manner.  He also requested cross-country pilots to do the same for waypoints that were further afield..') }}</p>
+
+<p>{{ _('With the rapid adoption of GPS-based final glide computers the demand for airfield coordinates increased rapidly.  Initially manufacturers installed databases such as from Jeppesen (which incurred charges), but these were expensive and often faulty since they were based on the official data.  Hence it came as no surprise when word of Michael\'s idea rapidly spread and more & more GPS-measured coordinates were made available to him.') }}</p>
+
+<p>{{ _('His initiative even resulted in the more exact airfield coordinates being communicated to the local aviation authorities so that they could correct their publications.  Up to 2005 very little happened - first with the 2006 ICAO maps for Northern Germany the Gramkeker-Heide airfield was no longer placed in the Elbe-Lübek canal, thus closing a large circle.') }}</p>
+
+<h3>{{ _('The Second Generation') }}</h3>
+
+<p>{{ _('On the 7th January 2008, Michael passed away aged 71 as result of a severe illness.  An obituary appeared in the 2/2008 edition of the "Luftsport" magazine (<a href="%(link)s">in German</a>).', link=url_for('not_available')) }}</p>
+
+<p>{{ _('The following March Antje Meier handed over the database and programm to Michael \'Mike\' Köster so that the project could be continued. Mike was able to gain Howard Mills to help.  Subsequently Willy Dobé joined them.  These three form the organizational core of the current WELT2000 project.') }}</p>
+{% endblock %}

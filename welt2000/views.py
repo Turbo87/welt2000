@@ -17,6 +17,11 @@ def references():
     return render_template('references.jinja')
 
 
+@app.route('/history')
+def history():
+    return render_template('history.jinja')
+
+
 @app.route('/about')
 def about():
     return render_template('about.jinja')
