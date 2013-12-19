@@ -32,6 +32,11 @@ def contact():
     return render_template('contact.jinja')
 
 
+@app.route('/legal-terms')
+def legal_terms():
+    return render_template('legal-terms.jinja')
+
+
 @app.route('/about')
 def about():
     return render_template('about.jinja')

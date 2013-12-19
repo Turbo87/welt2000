@@ -1,0 +1,21 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<h2>{{ _('Legal Terms') }}</h2>
+
+<h3>{{ _('Participation') }}</h3>
+
+<p>{{ _('WELT2000 was created through the contributions of many enthusiasts world-wide.  It is possible that well-intentioned contributions violate the rights of third-partys.  In order to prevent this we have our Provisions for Contributors.') }} <a href="{{ url_for('not_available') }}">{{ _('More...') }}</a></p>
+
+<h3>{{ _('Terms of Use') }}</h3>
+
+<p>{{ _('The project lives from its reputation and freedom of the data. So that this may continue in the future the use of the data is coupled to a few conditions.') }} <a href="{{ url_for('not_available') }}">{{ _('More...') }}</a></p>
+
+<h3>{{ _('Privacy Policy') }}</h3>
+
+<p>{{ _('Your personal data are valuable and must be protected. If we have to store data from you, what we do with it (and what we don\'t) are to be found in the Privacy Statement.') }} <a href="{{ _('not_available') }}">{{ _('More...') }}</a></p>
+
+<h3>{{ _('Web Site') }}</h3>
+
+<p>{{ _('All the various things that web site operators in Germany have to state or have to distance themselves from have been placed on a separate page.') }} <a href="{{ url_for('not_available') }}">{{ _('More...') }}</a></p>
+{% endblock %}
