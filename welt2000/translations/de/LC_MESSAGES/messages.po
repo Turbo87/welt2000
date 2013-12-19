@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WELT2000 0.1.0\n"
 "Report-Msgid-Bugs-To: tobias.bieniek@gmx.de\n"
-"POT-Creation-Date: 2013-12-19 00:08+0100\n"
+"POT-Creation-Date: 2013-12-19 13:48+0100\n"
 "PO-Revision-Date: 2013-12-19 00:08+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de <LL@li.org>\n"
@@ -25,6 +25,7 @@ msgid "News"
 msgstr "News"
 
 #: welt2000/templates/_base.jinja:11 welt2000/templates/contribute.jinja:4
+#: welt2000/templates/faq.jinja:68
 msgid "Contribute"
 msgstr "Mitmachen"
 
@@ -40,21 +41,191 @@ msgstr "Referenzen"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: welt2000/templates/_base.jinja:20 welt2000/templates/contribute.jinja:18
+#: welt2000/templates/_base.jinja:20 welt2000/templates/contact.jinja:4
+#: welt2000/templates/contribute.jinja:18
 msgid "Contact"
 msgstr "Kontakt"
 
 #: welt2000/templates/_base.jinja:21
+#: welt2000/templates/legal-terms-contribution.jinja:4
+#: welt2000/templates/legal-terms-contributor-terms.jinja:4
+#: welt2000/templates/legal-terms-privacy-policy.jinja:4
+#: welt2000/templates/legal-terms-terms-of-use.jinja:4
+#: welt2000/templates/legal-terms-website.jinja:4
+#: welt2000/templates/legal-terms.jinja:4
 msgid "Legal Terms"
 msgstr "Rechtliches"
 
-#: welt2000/templates/_base.jinja:22
+#: welt2000/templates/_base.jinja:22 welt2000/templates/rss.jinja:4
 msgid "RSS"
 msgstr "RSS"
 
 #: welt2000/templates/_base.jinja:23
 msgid "About"
 msgstr "Impressum"
+
+#: welt2000/templates/about.jinja:4
+msgid "About This Site"
+msgstr ""
+
+#: welt2000/templates/about.jinja:6
+msgid ""
+"These web pages together with WELT2000 database and the WELT2000 program "
+"are made available with no comercial interests or intentions and are "
+"exclusively operated and made available by volunteers:"
+msgstr ""
+
+#: welt2000/templates/about.jinja:14
+#, python-format
+msgid "We can be contacted by e-mail via <a href=\"%(link)s\">contact</a>."
+msgstr ""
+
+#: welt2000/templates/about.jinja:16
+msgid "Geman legal requirement"
+msgstr ""
+
+#: welt2000/templates/about.jinja:18
+#, python-format
+msgid "Further legal information can be found <a href=\"%(link)s\">here</a>."
+msgstr ""
+
+#: welt2000/templates/about.jinja:21
+#, fuzzy
+msgid "Contributors"
+msgstr "Mitmachen"
+
+#: welt2000/templates/about.jinja:23
+#, python-format
+msgid ""
+"The WELT2000 project was started by Michael-Lorenz Meier who managed it "
+"for the first 18 years.  You can read about how it all began in a brief "
+"<a href=\"%(link)s\">history</a>. Unfortunately Michael passed away on "
+"the 7th January 2008 aged 71 following a severe illness."
+msgstr ""
+
+#: welt2000/templates/about.jinja:25
+msgid ""
+"This project would not have attained its current status, either under "
+"Michael's control or that of the current team, if numerous others had not"
+" also been involved."
+msgstr ""
+
+#: welt2000/templates/about.jinja:63
+msgid "Add your name to the list of contributors here"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:6
+msgid ""
+"We welcome <i>all</i> feedback and <i>always</i> respond - unfortunately "
+"there can be a delay before we are able to react (daytime jobs!).   Hence"
+" we appologise in advance should this occur."
+msgstr ""
+
+#: welt2000/templates/contact.jinja:9
+msgid "Please enable JavaScript!"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:12
+#, python-format
+msgid ""
+"Please use this assistant when creating your mail. This helps us process "
+"your information.  Select a subject from the following list and click on "
+"\"Create Mail\" (below). If you want to report on an error in the "
+"database, please use the <a href=\"%(link)s\">form to contribute to the "
+"database</a> instead."
+msgstr ""
+
+#: welt2000/templates/contact.jinja:16
+msgid "select a subject"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:17
+msgid "Question"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:18
+msgid "Feedback"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:19
+#, fuzzy
+msgid "Instruments/Software"
+msgstr "Geräte und Programme"
+
+#: welt2000/templates/contact.jinja:20
+#: welt2000/templates/legal-terms-contributor-terms.jinja:42
+msgid "Miscellaneous"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:26
+msgid "Please select a subject."
+msgstr ""
+
+#: welt2000/templates/contact.jinja:34
+msgid "Create Mail"
+msgstr ""
+
+#: welt2000/templates/contact.jinja:37
+msgid ""
+"Note: The assistent can only help you if in your browser the protocol "
+"\"mailto\" is allocated to an application (e.g. Thunderbird) or an add-on"
+" (e.g. \"Send Mail in Browser\" for Firefox)."
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:4
+msgid "Contributing to the Database"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:6
+msgid ""
+"It is very easy to contribute to the WELT2000-Database.  Just send us a "
+"mail with your data.  However in order that this can be added to the "
+"WELT2000-database your mail must include two additional items."
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:8
+msgid "This assistent helps you to create your mail in three easy steps:"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:11
+msgid "Enable JavaScript!!"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:18
+#, python-format
+msgid ""
+"Please read the\n"
+"        <a href=\"%(contribution_link)s\" target=\"_blank\">Terms for "
+"Contributors</a> and the\n"
+"        <a href=\"%(privacy_link)s\" target=\"_blank\">Privacy Policy</a>."
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:22
+msgid "Accept"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:23
+#, python-format
+msgid ""
+"I accept the\n"
+"          <a href=\"%(contribution_link)s\">Conditions for "
+"Contributors</a>!"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:25
+#, python-format
+msgid ""
+"I accept the\n"
+"          <a href=\"%(privacy_link)s\">Data-Protection Conditions</a>!"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:28
+msgid "You must accept BOTH conditions!"
+msgstr ""
+
+#: welt2000/templates/contribute-data.jinja:32
+msgid "Create the mail"
+msgstr ""
 
 #: welt2000/templates/contribute.jinja:6
 msgid "There are several ways to contribute to the WELT2000 project."
@@ -71,7 +242,10 @@ msgid ""
 "are familiar. Are they faulty? Is information missing? If the answer is "
 "\"yes\" then you should make a <a href=\"%(link)s\">Contribution to the "
 "Database</a>."
-msgstr "Sieh Dir die Informationen der Flugplätze und Wegpunkte an, die Du sehr gut kennst. Sind sie fehlerhaft? Fehlen Informationen? Wenn ja, leiste einen <a href=\"%(link)s\">Beitrag zur Datenbank</a>."
+msgstr ""
+"Sieh Dir die Informationen der Flugplätze und Wegpunkte an, die Du sehr "
+"gut kennst. Sind sie fehlerhaft? Fehlen Informationen? Wenn ja, leiste "
+"einen <a href=\"%(link)s\">Beitrag zur Datenbank</a>."
 
 #: welt2000/templates/contribute.jinja:12
 msgid "You are Responsible for a Website?"
@@ -98,21 +272,459 @@ msgstr "Du hast Ideen, Kritik, Wünsche?"
 msgid ""
 "We welcome all feedback since this proves to us that we serve a purpose "
 "with this project."
-msgstr "Wir freuen uns über jedes Feedback, denn das zeigt uns, dass wir das Projekt nicht umsonst machen."
+msgstr ""
+"Wir freuen uns über jedes Feedback, denn das zeigt uns, dass wir das "
+"Projekt nicht umsonst machen."
 
 #: welt2000/templates/contribute.jinja:20
 msgid "You Have Some Spare Cash Available?"
 msgstr "Du hast ein wenig Geld übrig?"
 
 #: welt2000/templates/contribute.jinja:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Sponsor the segelflug.de site! The WELT2000 website is hosted free of "
 "charge by this platform - however the platform itself incurs costs. The "
 "segelflug.de and WELT2000 work entirely voluntarily. <a "
-"href=\"%(link)s\">segelflug.de Contacts</a>"
-msgstr "Werde Sponsor von segelflug.de! Die WELT2000-Website wird kostenlos von dieser (leider nicht ohne Kosten zu betreibenden) Plattform gehostet. Die Teams von segelflug.de und WELT2000 arbeiten übrigens ehrenamtlich. <a "
+"href=\"%(link)s\">segelflug.de Contacts %(symbol)s</a>"
+msgstr ""
+"Werde Sponsor von segelflug.de! Die WELT2000-Website wird kostenlos von "
+"dieser (leider nicht ohne Kosten zu betreibenden) Plattform gehostet. Die"
+" Teams von segelflug.de und WELT2000 arbeiten übrigens ehrenamtlich. <a "
 "href=\"%(link)s\">segelflug.de Ansprechpartner</a>"
+
+#: welt2000/templates/downloads.jinja:8
+msgid "Airfield & Waypoint Databases"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:9
+msgid "Airspace Database"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:10 welt2000/templates/downloads.jinja:163
+msgid "Programs"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:11 welt2000/templates/downloads.jinja:190
+msgid "Documentation"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:15
+msgid "Airfield & Turning Point Databases"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:17
+msgid ""
+"Databases are provided in two flavors, that differ in currentness, error "
+"checking, and extent:"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:20
+#, python-format
+msgid ""
+"<a href=\"%(releases)s\">Releases</a> are published twice a year, at the "
+"beginning of February and August. Prior to publishing, data are being "
+"checked syntactically. Formats for varios software and instruments are "
+"proviced."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:21
+#, python-format
+msgid ""
+"<a href=\"%(snapshots)s\">Snapshots</a> are published on a daily basis. "
+"No syntax checking is performed. Only the WELT2000 format is provided. "
+"Other database formats must be self-created using the <a "
+"href=\"%(programs)s\">WELT2000 program</a>."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:25
+#, fuzzy
+msgid "Releases"
+msgstr "Freigabedatum"
+
+#: welt2000/templates/downloads.jinja:29 welt2000/templates/downloads.jinja:117
+msgid "Format"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:30 welt2000/templates/downloads.jinja:118
+#: welt2000/templates/rss.jinja:6
+msgid "Content"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:31 welt2000/templates/downloads.jinja:119
+msgid "Update"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:32 welt2000/templates/downloads.jinja:120
+#, fuzzy
+msgid "Download"
+msgstr "Downloads"
+
+#: welt2000/templates/downloads.jinja:37 welt2000/templates/downloads.jinja:46
+#: welt2000/templates/downloads.jinja:53 welt2000/templates/downloads.jinja:62
+#: welt2000/templates/downloads.jinja:71 welt2000/templates/downloads.jinja:81
+#: welt2000/templates/downloads.jinja:92
+msgid "Airfields, Out-Landing Sites and Waypoints (World-Wide)."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:38
+msgid "The original file from which all other files are generated!"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:82
+msgid ""
+"More suitable than WGS since STREPLA when loading uses the 6 character "
+"names and does not generate new ones."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:101
+msgid "Airfields and Out-Landing Sites (World-Wide) no Waypoints."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:108
+#: welt2000/templates/downloads.jinja:160
+#: welt2000/templates/downloads.jinja:187
+#: welt2000/templates/downloads.jinja:207 welt2000/templates/faq.jinja:27
+#: welt2000/templates/faq.jinja:39 welt2000/templates/faq.jinja:50
+#: welt2000/templates/faq.jinja:60 welt2000/templates/faq.jinja:70
+#: welt2000/templates/faq.jinja:80
+msgid "Back to Top"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:111
+msgid "Snapshots"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:113
+#, python-format
+msgid ""
+"<b>INFO:</b> The snapshot feature is new (August 2013), hence may be slow"
+" and flawed. For a list of known bugs, please click <a "
+"href=\"%(bugs)s\">here</a>. In case of other malfunctions, please send a "
+"<a href=\"%(contact)s\">message to the WELT2000 team</a>."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:124
+msgid "Airfields, Glider Sites, Ultralight Sites (World-Wide)."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:125
+#: welt2000/templates/downloads.jinja:132
+msgid "daily"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:131
+msgid "Waypoints, Turningpoints (World-Wide)."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:139
+msgid "Known Bugs"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:143
+msgid "Error"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:143
+msgid "Snapshot download is slow and incomplete"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:144
+msgid "Workaround"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:144
+msgid "Wait five minutes, then restart snapshot download"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:145
+msgid ""
+"Click one of the above download links - Wait until browser does not "
+"indicate data transfer activity anymore - Goto the end of the dowloaded "
+"page. There you <u>don't</u> find \"$ End of File\" AND upon clicking the"
+" download link again instantly, you see \"$ snapshot is being created at "
+"the moment. Please check again in five minutes!\""
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:150
+msgid "Airspace Databases"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:152
+msgid ""
+"For Germany the German Aero Club DAeC provides an airspace file which is "
+"maintained by the German air navigation service provider DFS. "
+"International airspace files are available on John Leibachers Soaring "
+"Services website. Hence the WELT2000 project does not maintain airspace "
+"files anymore."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:154 welt2000/templates/faq.jinja:22
+#: welt2000/templates/faq.jinja:35 welt2000/templates/faq.jinja:45
+#: welt2000/templates/faq.jinja:56 welt2000/templates/faq.jinja:66
+#: welt2000/templates/faq.jinja:76
+#, fuzzy
+msgid "Further Information"
+msgstr "Mehr Informationen"
+
+#: welt2000/templates/downloads.jinja:156
+msgid "German Airspace Data"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:157
+msgid "International Airspace Data"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:174
+msgid ""
+"Program to display the WELT2000 database and to create device-specific "
+"formats.  Includes WELT2000 sample data and airspace (<em>not</em> "
+"updated)."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:174
+msgid "Airspace"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:177
+#: welt2000/templates/downloads.jinja:183
+#: welt2000/templates/downloads.jinja:203
+#, fuzzy
+msgid "download"
+msgstr "Downloads"
+
+#: welt2000/templates/downloads.jinja:181
+msgid ""
+"Same as program WELT2000 (see above) plus more programs and instructions "
+"to transfer data to GARMIN devices via PCX5.com and G7ToWin."
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:200
+msgid "Database Format Specification"
+msgstr ""
+
+#: welt2000/templates/downloads.jinja:201
+msgid ""
+"Describes the format of the WELT2000 database WELT2000.TXT. Does not "
+"cover the format of the map file WELT2000.MAP."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:5
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:7
+#, python-format
+msgid ""
+"Here we try to answer questions that are frequently asked.  If you do not"
+" find the answer to your question just <a href=\"%(link)s\">Ask by "
+"Mail</a>."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:10 welt2000/templates/faq.jinja:19
+msgid "What is WELT2000?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:11 welt2000/templates/faq.jinja:30
+msgid "Which Data are in the Database?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:12 welt2000/templates/faq.jinja:42
+msgid "Why Are you Doing This?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:13 welt2000/templates/faq.jinja:53
+msgid "Who is Michael-Lorenz Meier and what is MILOMEI?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:14 welt2000/templates/faq.jinja:63
+msgid "How can I Contribute?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:15
+msgid "How can I Load the Data into my  Navigation Device?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:21
+msgid ""
+"WELT2000 is a database which holds world-wide data for airfields and "
+"waypoints.  Additionally there is a program for managing the data.  "
+"Database and program are free of charge!  This means that they can be "
+"used and passed onto without charge.  They may also be integrated into "
+"commercial products as long as one adheres to a few simple rules.  The "
+"WELT2000 database is included into their products by many device and "
+"software manufacturers.  If you are involved with avaiation sports you "
+"have probably already used the data."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:24
+msgid "WELT2000 Conditions of Use"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:25
+msgid "Devices and Programs with WELT2000 Data"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:32
+msgid ""
+"Currently the database contains the coordinates and elevation of "
+"airfields, gliding sites, ultralight flieds, landing-out strips and "
+"waypoints.  Additionally for all sites where one can land the runway "
+"orientation, the length and the surface type is included.  If there is an"
+" allocated radio frequency and an ICAO-Code these are also included."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:33
+msgid ""
+"The database structure is described in the \"Database Format\n"
+"Specification\" which is available in the download area."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:37
+msgid "Download Documentation"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:44
+msgid ""
+"Because one requires correct geodata for safe and stress-free flying and "
+"that a database such as WELT2000 would be otherwise not be available - "
+"not for love nor money!  Other databases restrict themselves to single "
+"countries (e.g. Christian Hynek's SIP) or omit airfields relevant to "
+"aviation sports (e.g. the aviation authorities databases) or they are "
+"restricted to specific types of information (e.g. out-landing catalogue "
+"or the DULV database)."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:55
+msgid ""
+"Michael-Lorenz Meier was a glider pilot from Boberg near Hamburg who, at "
+"the start of the 1990s, began to systematically gather coordinates of "
+"airfields and waypoints within Germany and to manage these with a program"
+" that he wrote.  MILOMEI is the abbreviation that Michael chose which he "
+"used for some of his projects as a \"Branding\".  The WELT2000 project "
+"was known outside the borders of Germany and since it was easier to "
+"pronounce MILOMEI in other languages, MILOMEI bacame a synonym for the "
+"project."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:58 welt2000/templates/history.jinja:4
+msgid "How it all Began"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:65
+msgid ""
+"The most important activity is supplying data for the database since "
+"without the knowledge of local aviation enthusiasts, who are informed "
+"about changes to airfields, the project would not be able to continue.  "
+"There are many additional things that need to be done."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:73
+msgid "How can I Load the Data into my Navigation Device?"
+msgstr ""
+
+#: welt2000/templates/faq.jinja:75
+msgid ""
+"Currently our help here is limited and we have to refer you to the "
+"manufacturers of the various devices.  We can generate the data from the "
+"database in various device and program-specific formats but we are unable"
+" to supply support or various programs.  Only the owners of Garmin© "
+"devices profit from the fact that Michael owned a GARMIN©-GPS device "
+"which he included in the WELT2000 program functions as well as "
+"instructions for data transfer."
+msgstr ""
+
+#: welt2000/templates/faq.jinja:78
+msgid "Downloading the WELT2000 program"
+msgstr ""
+
+#: welt2000/templates/history.jinja:6
+msgid "Motivation"
+msgstr ""
+
+#: welt2000/templates/history.jinja:8
+msgid ""
+"At the start of the 1990s Michael-Lorenz Meier (also known as Milomei), a"
+" glider pilot from Boberg near Hamburg, began with the help of his wife "
+"Antje  to systematically gather coordinates of airfields and waypoints "
+"within Germany and to manage these with a program that he wrote."
+msgstr ""
+
+#: welt2000/templates/history.jinja:10
+msgid ""
+"The trigger for this initiative was the availability of GPS receivers "
+"combined with the \"discovery\" that many of the coordinates that were "
+"shown in the official aviation publications such as the AIP or the German"
+" <i>Fliegertaschenkalender</i> were incorrect.  For example he discovered"
+" that the nearby gliding airfield Grambeker-Heide was shown 1.5 km to far"
+" to the West thus implying that it was located in the middle of the "
+"Elbe-Lübeck canal.  He suspected that this was knowingly falsified on "
+"military &amp; political grounds during the Cold War."
+msgstr ""
+
+#: welt2000/templates/history.jinja:12
+msgid ""
+"Such inaccuracies were unacceptable for a glider pilot such as Michael "
+"since the advent of GPS enables precise final glides to be made into "
+"unknown airfields in perfect safety.  However one must be able to reply "
+"on the location information for the airfield - with modern gliders the "
+"approach angle is so low that one will possibly not see the airfield even"
+" from a short distance and would recognise an error at a very late stage."
+msgstr ""
+
+#: welt2000/templates/history.jinja:14
+msgid "The Idea Makes Waves"
+msgstr ""
+
+#: welt2000/templates/history.jinja:16
+msgid ""
+"Initially Michael measured the coordinates of nearby airfields and "
+"waypoints by visiting them on the ground and using a GPS-receiver.  "
+"Subsequently he wrote to glider clubs requesting that they determine "
+"their coordinates in a similar manner.  He also requested cross-country "
+"pilots to do the same for waypoints that were further afield.."
+msgstr ""
+
+#: welt2000/templates/history.jinja:18
+msgid ""
+"With the rapid adoption of GPS-based final glide computers the demand for"
+" airfield coordinates increased rapidly.  Initially manufacturers "
+"installed databases such as from Jeppesen (which incurred charges), but "
+"these were expensive and often faulty since they were based on the "
+"official data.  Hence it came as no surprise when word of Michael's idea "
+"rapidly spread and more & more GPS-measured coordinates were made "
+"available to him."
+msgstr ""
+
+#: welt2000/templates/history.jinja:20
+msgid ""
+"His initiative even resulted in the more exact airfield coordinates being"
+" communicated to the local aviation authorities so that they could "
+"correct their publications.  Up to 2005 very little happened - first with"
+" the 2006 ICAO maps for Northern Germany the Gramkeker-Heide airfield was"
+" no longer placed in the Elbe-Lübek canal, thus closing a large circle."
+msgstr ""
+
+#: welt2000/templates/history.jinja:22
+msgid "The Second Generation"
+msgstr ""
+
+#: welt2000/templates/history.jinja:24
+#, python-format
+msgid ""
+"On the 7th January 2008, Michael passed away aged 71 as result of a "
+"severe illness.  An obituary appeared in the 2/2008 edition of the "
+"\"Luftsport\" magazine (<a href=\"%(link)s\">in German</a>)."
+msgstr ""
+
+#: welt2000/templates/history.jinja:26
+msgid ""
+"The following March Antje Meier handed over the database and programm to "
+"Michael 'Mike' Köster so that the project could be continued. Mike was "
+"able to gain Howard Mills to help.  Subsequently Willy Dobé joined them."
+"  These three form the organizational core of the current WELT2000 "
+"project."
+msgstr ""
 
 #: welt2000/templates/index.jinja:4
 msgid "Welcome"
@@ -123,7 +735,10 @@ msgid ""
 "WELT2000 is a free database of airports and waypoints worldwide. The data"
 " is the basis of a lot of instruments and software for airsports. "
 "WELT2000 is made by airsportsmen for airsportsmen."
-msgstr "WELT2000 ist eine freie Datenbank mit Daten von Flugplätzen und Wegpunkten weltweit. Die Daten sind Basis vieler Geräte und Programme für den Luftsport. WELT2000 wird von Luftsportlern für Luftsportler gemacht."
+msgstr ""
+"WELT2000 ist eine freie Datenbank mit Daten von Flugplätzen und "
+"Wegpunkten weltweit. Die Daten sind Basis vieler Geräte und Programme für"
+" den Luftsport. WELT2000 wird von Luftsportlern für Luftsportler gemacht."
 
 #: welt2000/templates/index.jinja:9
 msgid "Release date"
@@ -157,11 +772,461 @@ msgstr "Jetzt mitmachen"
 msgid "Database download"
 msgstr "Datenbank downloaden"
 
+#: welt2000/templates/legal-terms-contribution.jinja:7
+#, fuzzy
+msgid "Contribution"
+msgstr "Jetzt mitmachen"
+
+#: welt2000/templates/legal-terms-contribution.jinja:9
+#, python-format
+msgid ""
+"We respect the intellectual property of others. Hence those who "
+"contribute to the database must accept the <a "
+"href=\"%(link)s\">Contributor Terms</a>. Amongst other things these "
+"ensure that:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contribution.jinja:12
+msgid "the rights of others are not violated,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contribution.jinja:13
+msgid "free-of-charge and unrestricted usage is possible and"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contribution.jinja:14
+msgid "distribution and futher processing is allowed."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contribution.jinja:17
+#, python-format
+msgid ""
+"NOTE: The above text is not the entire set of provisions; rather it is a "
+"summary of the most important points reduced to a form understandable by "
+"normal mortals.  Please also read the <a href=\"%(link)s\">complete "
+"text</a>."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:7
+#, fuzzy
+msgid "Contributor Terms"
+msgstr "Mitmachen"
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:9
+#, python-format
+msgid "Version %(version)s as amended on %(date)s"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:11
+msgid ""
+"Thank you for your interest in contributing data and/or any other content"
+" (collectively, “Contents”) to the geo-database of the WELT2000 project "
+"(the “Project”). This contributor agreement (the “Agreement”) is made "
+"between you (“You”) and the Project and clarifies the intellectual "
+"property rights in any Contents that You choose to submit to the Project "
+"in this user account. Please read the following terms and conditions "
+"carefully."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:14
+msgid ""
+"We respect the intellectual property rights of others and we need to be "
+"able to respond to any objections by intellectual property owners. This "
+"means that:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:16
+msgid ""
+"Your contribution of data should not infringe the intellectual property "
+"rights of anyone else. If you contribute Contents, You are indicating "
+"that, as far as You know, You have the right to authorize the Project to "
+"use and distribute those Contents under our current licence terms. If You"
+" do not have that right, You risk having Your contribution deleted (see "
+"below)."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:17
+msgid ""
+"Please note that the Project does not have to include Contents You "
+"contribute in the Project, and may remove Your contributions from the "
+"Project at any time. For example, if we suspect that any contributed data"
+" is incompatible, (in the sense that we could not continue to lawfully "
+"distribute it), with whichever licence or licences we are then using (see"
+" sections 3 and 4), then we may delete that data."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:22
+msgid "Rights Granted"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:25
+msgid ""
+"Subject to Section 3 and 4 below, You hereby grant to the Project a "
+"worldwide, royalty-free, non-exclusive, perpetual, irrevocable licence to"
+" do any act that is restricted by copyright, database right or any "
+"related right over anything within the Contents, whether in the original "
+"medium or any other. These rights explicitly include commercial use, and "
+"do not exclude any field of endeavour. These rights include, without "
+"limitation, the right to sub-license the work through multiple tiers of "
+"sub-licensees and to sue for any copyright violation directly connected "
+"with the Projects rights under these terms. To the extent allowable under"
+" applicable local laws and copyright conventions, You also waive and/or "
+"agree not to assert against the Project or its licensees any moral rights"
+" that You may have in the Contents."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:27
+msgid ""
+"The Project agrees that it may only use or sub-license Your Contents as "
+"part of a database and only under the terms of one or more of the "
+"following licences: ODbL 1.0 for the database and DbCL 1.0 for the "
+"individual contents of the database; CC-BY-SA 2.0; or such other free and"
+" open licence (for example, http://www.opendefinition.org/okd/) as may "
+"from time to time be chosen by a vote of the Project membership and "
+"approved by at least a 2/3 majority vote of active contributors.<br>An "
+"\"active contributor\" is defined as:<br>a natural person (whether using "
+"a single or multiple accounts) who has edited the Project in any three "
+"calendar months from the last 12 months (i.e. there is a demonstrated "
+"interest over time); and responds to a request to vote within 3 weeks."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:29
+#, python-format
+msgid ""
+"At Your or the copyright owner’s option, the Project agrees to attribute "
+"You or the copyright owner. A mechanism will be provided, currently a web"
+" page %(link)s."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:31
+msgid ""
+"Except as set forth herein, You reserve all right, title, and interest in"
+" and to Your Contents."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:34
+#: welt2000/templates/legal-terms-website.jinja:6
+msgid "Limitation of Liability"
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:37
+msgid ""
+"To the extent permitted by applicable law, You provide the Contents “as "
+"is” without warranty of any kind, either express or implied, including "
+"without limitation any warranties or conditions of merchantability, "
+"fitness for a particular purpose, or otherwise."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:39
+msgid ""
+"Subject to any liability that may not be excluded or limited by law, "
+"neither You nor the Project shall be liable for any special, indirect, "
+"incidental, consequential, punitive, or exemplary damages under this "
+"Agreement, however caused and under any theory of liability. This "
+"exclusion applies even if either party has been advised of the "
+"possibility of such damages."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:45
+msgid ""
+"This Agreement shall be governed by English law without regard to "
+"principles of conflict of law. You agree that the United Nations "
+"Convention on Contracts for the International Sale of Goods (1980) is "
+"hereby excluded in its entirety from application to this Agreement. In "
+"the event of invalidity of any provision of this Agreement, the parties "
+"agree that such invalidity shall not affect the validity of the remaining"
+" portions of this Agreement. This is the entire agreement between You and"
+" the Project which supersedes any prior agreement, whether written, oral "
+"or other, relating to the subject matter of this agreement."
+msgstr ""
+
+#: welt2000/templates/legal-terms-contributor-terms.jinja:48
+#, python-format
+msgid "Content is available under %(license)s."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:7
+#: welt2000/templates/legal-terms.jinja:14
+msgid "Privacy Policy"
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:9
+msgid "Personal Data"
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:11
+msgid ""
+"Generally this website does neither collect, store, nor process personal "
+"data."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:13
+msgid "The only exceptions are:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:16
+#, python-format
+msgid ""
+"If a person contributes data or any other content, the email address of "
+"that person is stored to be able to protect the person's intellectual "
+"property rights. For more information about this, please refer to the <a "
+"href=\"%(link)s\">Contributor Terms</a>. The email address is only used "
+"to communicate with the contributor regarding its rights."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:17
+msgid ""
+"If a person requests to receive a WELT2000 newsletter, the email address "
+"is added to the list of subscribers of that newsletter. The email address"
+" is used only for that particular newsletter. When more newsletters are "
+"introduced, subscribers of existing newsletters are not added to the new "
+"subscribers list unless otherwise expressly agreed."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:20
+msgid ""
+"Personal data is not made publically available nor forwarded to third "
+"parties under any circumstances."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:22
+msgid "Web Analytic"
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:24
+#, python-format
+msgid ""
+"This website uses etracker technology (%(link)s) to collect visitor "
+"behavior data. The data is collected anonymously to be used for marketing"
+" and optimization purposes. All visitor data is saved using an anonymous "
+"user ID to aggregate a usage profile. Cookies may be used for this "
+"purpose. Cookies are small text files that are stored in the visitor's "
+"local browser cache. Using such cookies it is possible to recognize the "
+"visitor's browser."
+msgstr ""
+
+#: welt2000/templates/legal-terms-privacy-policy.jinja:25
+#, python-format
+msgid ""
+"The data collected via etracker technology will not be used to determine "
+"the personal identity of the website visitor or compiled with personal "
+"data pertaining to the user of the pseudonym unless agreed to separately "
+"by the person concerned. The collection and storage of data may be <a "
+"target=\"_blank\" href=\"%(link)s\">refused %(symbol)s</a> at any time "
+"with respect to subsequent services."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:6
+#: welt2000/templates/legal-terms.jinja:10
+msgid "Terms of Use"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:8
+#, python-format
+msgid ""
+"The WELT2000 database is made available under the %(license)s. Amongst "
+"other things this means:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:9
+msgid "For the database you are permitted:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:12
+msgid "to use: Use the database free-of-charge,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:13
+msgid "to distribute: Copy and distribute the database,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:14
+msgid "to process: Create your own work with the database,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:15
+msgid "to modify: Change, transform and extend the database,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:18
+msgid "provided that you agree:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:21
+msgid ""
+"to reference: If you make the database publicly available you must inform"
+" the users about the license,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:22
+msgid ""
+"to license in a similar way: If you make an adapted version of the "
+"database public you must also place your work under ODbL,"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:23
+msgid ""
+"to preserve the freedom: If you distribute a restricted version of the "
+"database you must make it just as easy for the recipients to obtain a "
+"free copy of the database."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:26
+#, python-format
+msgid ""
+"NOTE: The above text is not the entire license text; rather it is a "
+"summary of the most important points reduced to a form understandable by "
+"normal mortals.  Please also read the <a href=\"%(link)s\" "
+"target=\"_blank\">complete text %(symbol)s</a>."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:29
+msgid "Call for Contributions"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:31
+msgid ""
+"The WELT2000 project relies on contributions. Therefore you <i>should</i>"
+" advertise WELT2000 wherever possible."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:33
+msgid ""
+"As an extension to the Terms of Use as formulated in ODbL you <i>must</i>"
+" call for contributions when you redistribute the database (whether whole"
+" or in part) or create your own product with it or extend the dabase "
+"contents."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:35
+msgid ""
+"Hence at the places where ODbL has a reference to the license text or "
+"requires the inclusion of the same you must include a reference to the "
+"WELT2000 website, together with a call to contribute."
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:37
+msgid "Example:"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:37
+#, python-format
+msgid ""
+"Contains information from the <a href=\"%(welt2000)s\" "
+"target=\"_blank\">WELT2000 Database</a> and is made available here under "
+"the terms of the <a href=\"%(odbl)s\" target=\"_blank\">Open Database "
+"Licence %(symbol)s</a>. Contribute to the <a href=\"%(welt2000)s\" "
+"target=\"_blank\">WELT2000 Project</a>!"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:39
+msgid "Official Aviation Publications"
+msgstr ""
+
+#: welt2000/templates/legal-terms-terms-of-use.jinja:41
+msgid ""
+"The use of the current publications from the relevant aviation "
+"authorities is a part of the responsibities of an aviator.  WELT2000 only"
+" serves as a support during the preparation of and whilst carring out "
+"flights.  It must be seen as an addition to the official publications.  "
+"The WELT2000 database is no subsitute for the latter."
+msgstr ""
+
+#: welt2000/templates/legal-terms-website.jinja:8
+msgid ""
+"The contents of this web site - including the WELT2000 database are "
+"created with the greatest of care. However the provider does not "
+"guarantee the accuracy, completeness or currency of the available "
+"content.  Use of this web site is at your own risk.  In particular "
+"contributions by named persons represent the opinion of the author and "
+"not necessarily the opinion of the provider."
+msgstr ""
+
+#: welt2000/templates/legal-terms-website.jinja:10
+msgid "External Links"
+msgstr ""
+
+#: welt2000/templates/legal-terms-website.jinja:12
+#, python-format
+msgid ""
+"The operator of this web site is not liable for the content of external "
+"Internet sites which are linked to from the WELT2000 site. Links to "
+"external sites are indicated by the symbol %(symbol)s. The content of "
+"such external sites adhere to current laws as far as the provider of this"
+" homepage is aware."
+msgstr ""
+
+#: welt2000/templates/legal-terms-website.jinja:14
+msgid ""
+"These contents are either external contents according to German law §5 II"
+" MDStv. or not our own content according to German law §8 I TDG. The "
+"operator of this site is not aware of possible violations of laws "
+"committed by external sites. Should any such violations take place on "
+"external sites without the knowledge of this operator, then the operator "
+"dissociates themselves from these violations. The operator also distances"
+" themselves from any other lawful and unlawful content of external sites,"
+" for which only the operators of those sites are responsible and for "
+"which the operator of this website has no control."
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:6
+msgid "Participation"
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:8
+msgid ""
+"WELT2000 was created through the contributions of many enthusiasts world-"
+"wide.  It is possible that well-intentioned contributions violate the "
+"rights of third-partys.  In order to prevent this we have our Provisions "
+"for Contributors."
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:8
+#: welt2000/templates/legal-terms.jinja:12
+#: welt2000/templates/legal-terms.jinja:16
+#: welt2000/templates/legal-terms.jinja:20
+msgid "More..."
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:12
+msgid ""
+"The project lives from its reputation and freedom of the data. So that "
+"this may continue in the future the use of the data is coupled to a few "
+"conditions."
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:16
+msgid ""
+"Your personal data are valuable and must be protected. If we have to "
+"store data from you, what we do with it (and what we don't) are to be "
+"found in the Privacy Statement."
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:18
+msgid "Web Site"
+msgstr ""
+
+#: welt2000/templates/legal-terms.jinja:20
+msgid ""
+"All the various things that web site operators in Germany have to state "
+"or have to distance themselves from have been placed on a separate page."
+msgstr ""
+
+#: welt2000/templates/not-available.jinja:4
+msgid "Not available"
+msgstr ""
+
+#: welt2000/templates/not-available.jinja:6
+msgid "This page is unfortunately not available (yet)."
+msgstr ""
+
 #: welt2000/templates/references.jinja:6
 msgid ""
 "The WELT2000 database is the foundation of many devices and programs for "
 "aviation sports."
-msgstr "Die WELT2000-Datenbank ist Basis vieler Geräte und Programme für den Luftsport."
+msgstr ""
+"Die WELT2000-Datenbank ist Basis vieler Geräte und Programme für den "
+"Luftsport."
 
 #: welt2000/templates/references.jinja:11
 msgid "Vendor"
@@ -178,6 +1243,24 @@ msgstr "Homepage"
 #: welt2000/templates/references.jinja:51
 msgid "Add a Device or Program"
 msgstr "Gerät oder Programm hinzufügen"
+
+#: welt2000/templates/rss.jinja:8
+msgid ""
+"By subscribing to the RSS feed \"WELT2000 Updates\" you can receive "
+"notifications about updates of the WELT2000 database. In contrast to the "
+"\"WELT2000 News & Updates\" newsletter the RSS feed broadcasts "
+"notifications about modified data only. Other important information, e.g."
+" changes of the database structure or the website, are sent over the "
+"newsletter only."
+msgstr ""
+
+#: welt2000/templates/rss.jinja:11
+msgid "Subscribe to RSS-Feed \"WELT2000 Updates\""
+msgstr ""
+
+#: welt2000/templates/rss.jinja:12
+msgid "More about Newsletter \"WELT2000 News & Updates\""
+msgstr ""
 
 #~ msgid ""
 #~ msgstr ""
