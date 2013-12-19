@@ -22,6 +22,11 @@ def contribute_data():
     return render_template('contribute-data.jinja')
 
 
+@app.route('/downloads')
+def downloads():
+    return render_template('downloads.jinja')
+
+
 @app.route('/references')
 def references():
     return render_template('references.jinja')

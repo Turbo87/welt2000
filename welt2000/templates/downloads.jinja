@@ -1,0 +1,208 @@
+{% extends "_base.jinja" %}
+
+{% block content %}
+<a name="top"></a>
+<h2>Downloads</h2>
+
+<ul>
+  <li><a href="#waypoint-databases">{{ _('Airfield & Waypoint Databases') }}</a></li>
+  <li><a href="#airspace-databases">{{ _('Airspace Database') }}</a></li>
+  <li><a href="#programs">{{ _('Programs') }}</a></li>
+  <li><a href="#documentation">{{ _('Documentation') }}</a></li>
+</ul>
+
+<a name="waypoint-databases"></a>
+<h3>{{ _('Airfield & Turning Point Databases') }}</h3>
+
+<p>{{ _('Databases are provided in two flavors, that differ in currentness, error checking, and extent:') }}</p>
+
+<ol>
+  <li>{{ _('<a href="%(releases)s">Releases</a> are published twice a year, at the beginning of February and August. Prior to publishing, data are being checked syntactically. Formats for varios software and instruments are proviced.', releases='#waypoint-databases-releases') }}</li>
+  <li>{{ _('<a href="%(snapshots)s">Snapshots</a> are published on a daily basis. No syntax checking is performed. Only the WELT2000 format is provided. Other database formats must be self-created using the <a href="%(programs)s">WELT2000 program</a>.', snapshots='#waypoint-databases-snapshots', programs='#programs') }}</li>
+</ol>
+
+<a name="waypoint-databases-releases"></a>
+<h4>{{ _('Releases') }}</h4>
+
+<table>
+  <tr>
+    <th>{{ _('Format') }}</th>
+    <th>{{ _('Content') }}</th>
+    <th>{{ _('Update') }}</th>
+    <th colspan="2">{{ _('Download') }}</th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>WELT2000</b></td>
+    <td>
+      {{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}<br>
+      {{ _('The original file from which all other files are generated!') }}
+    </td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WELT2000.TXT.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WELT2000.TXT" target="_blank">TXT</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>CAMBRIDGE</b></td>
+    <td>{{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}<br></td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/CAMBRIDGE.DAT.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/CAMBRIDGE.DAT" target="_blank">DAT</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>FILSER (TXT)</b></td>
+    <td>{{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/FILSER.TXT.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/FILSER.TXT" target="_blank">TXT</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">
+      <b>SEEYOU</b>
+    </td>
+    <td>{{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/SEEYOU.CUP.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/SEEYOU.CUP" target="_blank">CUP</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">
+      <b>STREPLA (WGS)</b>
+    </td>
+    <td>{{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/STREPLA.WGS.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/STREPLA.WGS" target="_blank">WGS</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">
+      <b>STREPLA (CSV)</b>
+    </td>
+    <td>
+      {{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}<br>
+      {{ _('More suitable than WGS since STREPLA when loading uses the 6 character names and does not generate new ones.') }}
+    </td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/STREPLA.CSV.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/STREPLA.CSV" target="_blank">CSV</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">
+      <b>WINPILOT</b>
+    </td>
+    <td>{{ _('Airfields, Out-Landing Sites and Waypoints (World-Wide).') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WINPILOT.DAT.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WINPILOT.DAT" target="_blank">DAT</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;">
+      <b>ZANDER</b>
+    </td>
+    <td>{{ _('Airfields and Out-Landing Sites (World-Wide) no Waypoints.') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/ZANDER.WZ.ZIP">ZIP</a></td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/ZANDER.WZ" target="_blank">WZ</a></td>
+  </tr>
+</table>
+
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="waypoint-databases-snapshots"></a>
+<h4>{{ _('Snapshots') }}</h4>
+
+<p>{{ _('<b>INFO:</b> The snapshot feature is new (August 2013), hence may be slow and flawed. For a list of known bugs, please click <a href="%(bugs)s">here</a>. In case of other malfunctions, please send a <a href="%(contact)s">message to the WELT2000 team</a>.', bugs='#waypoint-databases-snapshots-known-bugs', contact=url_for('contact')) }}</p>
+
+<table>
+  <tr>
+    <th>{{ _('Format') }}</th>
+    <th>{{ _('Content') }}</th>
+    <th>{{ _('Update') }}</th>
+    <th colspan="2">{{ _('Download') }}</th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>WELT2000</b></td>
+    <td>{{ _('Airfields, Glider Sites, Ultralight Sites (World-Wide).') }}<br></td>
+    <td>{{ _('daily') }}</td>
+    <td><span style="color:lightgrey">ZIP</span></td>
+    <td><a href="http://welt2000.scuetersen.de/download/WELT2000-SNAPSHOT.PHP?n=l" target="_blank">TXT</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>WELT2000</b></td>
+    <td>{{ _('Waypoints, Turningpoints (World-Wide).') }}<br></td>
+    <td>{{ _('daily') }}</td>
+    <td><span style="color:lightgrey">ZIP</span></td>
+    <td><a href="http://welt2000.scuetersen.de/download/WELT2000-SNAPSHOT.PHP?n=w" target="_blank">TXT</a></td>
+  </tr>
+</table>
+
+<a name="waypoint-databases-snapshots-known-bugs"></a>
+<h5>{{ _('Known Bugs') }}</h5>
+
+<ol>
+  <li>
+    <u>{{ _('Error') }}:</u> {{ _('Snapshot download is slow and incomplete') }}<br>
+    <u>{{ _('Workaround') }}:</u> {{ _('Wait five minutes, then restart snapshot download') }}<br>
+    <u>Details:</u> {{ _('Click one of the above download links - Wait until browser does not indicate data transfer activity anymore - Goto the end of the dowloaded page. There you <u>don\'t</u> find "$ End of File" AND upon clicking the download link again instantly, you see "$ snapshot is being created at the moment. Please check again in five minutes!"') }}
+  </li>
+</ol>
+
+<a name="airspace-databases"></a>
+<h3>{{ _('Airspace Databases') }}</h3>
+
+<p>{{ _('For Germany the German Aero Club DAeC provides an airspace file which is maintained by the German air navigation service provider DFS. International airspace files are available on John Leibachers Soaring Services website. Hence the WELT2000 project does not maintain airspace files anymore.') }}</p>
+
+<p>{{ _('Further Information') }}</p>
+<ul>
+  <li><a href="http://www.daec.de/fachbereiche/luftraum-flugbetrieb/luftraumdaten/" target="_blank">{{ _('German Airspace Data') }} <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+  <li><a href="http://soaringweb.org/Airspace/HomePage.html" target="_blank">{{ _('International Airspace Data') }} <img src="{{ url_for('static', filename='external-link.png') }}"></a></li>
+</ul>
+
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="programs"></a>
+<h3>{{ _('Programs') }}</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Update</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>WELT2000</b></td>
+    <td>{{ _('Program to display the WELT2000 database and to create device-specific formats.  Includes WELT2000 sample data and airspace (<em>not</em> updated).') }} {{ _('Airspace') }} &copy; Deutsche Flugsicherung GmbH.
+    </td>
+    <td>18.Mar.2011</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WELT2000-EN.ZIP">{{ _('download') }}</a></td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>WELT200G</b></td>
+    <td>{{ _('Same as program WELT2000 (see above) plus more programs and instructions to transfer data to GARMIN devices via PCX5.com and G7ToWin.') }}</td>
+    <td>19.Jun.2009</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WELT200G.ZIP">{{ _('download') }}</a></td>
+  </tr>
+</table>
+
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+
+<a name="documentation"></a>
+<h3>{{ _('Documentation') }}</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Update</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap;"><b>{{ _('Database Format Specification') }}</b></td>
+    <td>{{ _('Describes the format of the WELT2000 database WELT2000.TXT. Does not cover the format of the map file WELT2000.MAP.') }}</td>
+    <td>02.Aug.2013</td>
+    <td><a href="http://www.segelflug.de/vereine/welt2000/download/WELT2000-SPEC.TXT" target="_blank">{{ _('download') }}</a></td>
+  </tr>
+</table>
+
+<p><a href="#top">{{ _('Back to Top') }}</a></p>
+{% endblock %}
