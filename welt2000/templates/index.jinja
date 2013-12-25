@@ -1,6 +1,8 @@
 {% extends "_base.jinja" %}
 
 {% block content %}
+<div class="banner-brand hidden-xs"><img src="{{ url_for('static', filename='banner.png') }}"></div>
+
 <h2>{{ _('Welcome') }}</h2>
 
 <p>{{ _('WELT2000 is a free database of airports and waypoints worldwide. The data is the basis of a lot of instruments and software for airsports. WELT2000 is made by airsportsmen for airsportsmen.') }}</p>

@@ -21,6 +21,12 @@ a:focus {
   text-decoration: none;
 }
 
+.banner-brand {
+  padding: 15px;
+  border-bottom: 2px solid #ac3;
+  text-align: center;
+}
+
 .navbar-default {
   background-color: #fff;
   border-color: #ac3;
