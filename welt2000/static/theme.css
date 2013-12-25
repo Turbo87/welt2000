@@ -105,8 +105,9 @@ a:focus {
   }
 
   .navbar-header,
-  .navbar-nav {
-    float: none;
+  .navbar-nav,
+  .navbar-left {
+    float: none !important;
   }
 
   .navbar-brand {
