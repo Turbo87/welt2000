@@ -1,5 +1,16 @@
 body {
   margin-top: 60px;
+  color: #3e4349;
+}
+
+a {
+  color: #490;
+}
+
+a:hover,
+a:focus {
+  color: #370;
+  text-decoration: none;
 }
 
 .navbar-default {
@@ -48,7 +59,7 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #3f493e;
+  color: #3e4349;
   background-color: #fff;
 }
 
