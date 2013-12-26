@@ -43,12 +43,12 @@
           </form>
 
           <ul class="nav navbar-nav">
-            <li><a href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
-            <li><a href="{{ url_for('not_available') }}">{{ _('News') }}</a></li>
-            <li><a href="{{ url_for('contribute') }}">{{ _('Contribute') }}</a></li>
-            <li><a href="{{ url_for('downloads') }}">{{ _('Downloads') }}</a></li>
-            <li><a href="{{ url_for('references') }}">{{ _('References') }}</a></li>
-            <li><a href="{{ url_for('faq') }}">{{ _('FAQ') }}</a></li>
+            <li{{ {'class': (menu == 'home') and 'active' or None}|xmlattr }}><a href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
+            <li{{ {'class': (menu == 'news') and 'active' or None}|xmlattr }}><a href="{{ url_for('not_available') }}">{{ _('News') }}</a></li>
+            <li{{ {'class': (menu == 'contribute') and 'active' or None}|xmlattr }}><a href="{{ url_for('contribute') }}">{{ _('Contribute') }}</a></li>
+            <li{{ {'class': (menu == 'downloads') and 'active' or None}|xmlattr }}><a href="{{ url_for('downloads') }}">{{ _('Downloads') }}</a></li>
+            <li{{ {'class': (menu == 'references') and 'active' or None}|xmlattr }}><a href="{{ url_for('references') }}">{{ _('References') }}</a></li>
+            <li{{ {'class': (menu == 'faq') and 'active' or None}|xmlattr }}><a href="{{ url_for('faq') }}">{{ _('FAQ') }}</a></li>
           </ul>
         </div>
       </div>
