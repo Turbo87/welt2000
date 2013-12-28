@@ -8,7 +8,7 @@ This repository will be the base for the latest iteration of the WELT2000 websit
 
 You can install the WELT2000 web application and all of its dependencies using:
 
-    $ pip install -e .
+    $ pip install -r requirements.txt
 
 Finally you can start the server:
 
