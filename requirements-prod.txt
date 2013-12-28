@@ -1,0 +1,5 @@
+# Install welt2000 package
+-r requirements.txt
+
+# Additional requirements for the production server
+uWSGI==1.9.21.1

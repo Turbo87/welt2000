@@ -4,11 +4,11 @@ __a free airport and waypoint database__
 
 This repository will be the base for the latest iteration of the WELT2000 website. WELT2000 is a free database of airports and waypoints worldwide. The data is the basis of a lot of instruments and software for airsports.
 
-## Development Environment
+## Development
 
 You can install the WELT2000 web application and all of its dependencies using:
 
-    $ pip install -r requirements.txt
+    $ pip install -r requirements-dev.txt
 
 Finally you can start the server:
 

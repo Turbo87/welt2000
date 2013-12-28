@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name welt2000.skylines-project.org;
+
+    location / {
+        try_files $uri @welt2000;
+    }
+
+    location @welt2000 {
+        include uwsgi_params;
+        # notice: same socket from uwsgi command
+        uwsgi_pass unix:///tmp/uwsgi-welt2000.sock;
+    }
+}

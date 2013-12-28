@@ -1,0 +1,7 @@
+# Install welt2000 package
+-r requirements.txt
+
+# Additional requirements for development environments
+fabric==1.8.1
+git+https://github.com/Turbo87/gitric.git@30f0d1d#egg=gitric
+fabric-virtualenv==0.2.1
