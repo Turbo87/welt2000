@@ -2,10 +2,10 @@ from flask import Flask, request, session, current_app
 from flask.ext.babel import Babel
 from babel.core import negotiate_locale
 
-from welt2000.__about__ import (
+from welt2000.__about__ import (  # noqa
     __title__, __summary__, __uri__, __version__, __author__, __email__,
     __license__,
-)  # noqa
+)
 
 
 app = Flask(__name__)
